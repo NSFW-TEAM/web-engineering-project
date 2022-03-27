@@ -1,0 +1,71 @@
+html{
+    background-color: lightgrey;
+}
+
+#menu{
+    list-style-type: none;
+    display: flex;
+}
+
+#menu li{
+    float: center;
+    text-align: center;
+    margin: 30px 10px 50px 10px; 
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+#menu li a{
+    text-decoration: underline;
+    color: blue;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#menu li a:hover{
+    background-color: aqua;
+    color: rgb(255, 0, 0);
+}
+
+#menu li a:visited{
+    color: purple;
+}
+
+#menu li a:visited:hover{
+    background-color: aqua;
+    color: rgb(255, 0, 0);
+}
+
+#inicio ul{
+    list-style-type: none;
+    display:flex;
+}
+
+#Galeria ul{
+    list-style-type: none;
+    display: flex;
+}
+
+#Galeria ul li{
+    color: rgb(58, 58, 224);
+    float: left;
+    margin: 2px 2px 2px 2px; /* top right bottom left*/
+    /*
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    */
+
+    width: 140px;
+    flex-wrap: nowrap;
+}
+
+#Galeria ul li img{
+    width: "2px";
+}
+
+#Galeria ul li p{
+    color: black;
+}
+
