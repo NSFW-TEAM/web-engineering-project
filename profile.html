@@ -1,0 +1,108 @@
+<!DOCTYPE html><!--indica tipo de pagina en este caso html 5--> <!--para validar html buscar validator html-->
+<html lang="es"> <!--lang indica idioma a escribir-->
+    <head> <!---->
+        
+        <meta charset="utf-8"/> <!---charset indica configuracion de la codificacion-->
+        <title>Profile</title> <!--nombre de la pagina-->
+        <link rel="shortcut icon" href="imagenes/logo_randomgym.png">
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/profile.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <ul id="barrasuperior">
+                <ul id="titulo">
+                    <li>
+                        <img src="imagenes/logo_randomgym.png" height="150px" title="logo randomgym"/>
+                    </li>
+                </ul>
+                <ul id="menu">
+                    <li><a href="#">Comienza ahora</a></li>
+                    <li><a href="index.html">Rutina aleatoria</a></li>
+                    <li><a href="index.html">Alimentación aleatoria</a></li>
+                    <li><a href="index.html">Quienes somos</a></li>
+                </ul>
+            </ul>
+            <hr>
+        </header>
+
+        <!-- informacion de usuario --> 
+        <div id="info_user">
+            <span class="material-icons" id="user"> account_circle </span>
+            <p>Username</p>
+            <p>Email</p>
+            <p>Peso</p>
+            
+        </div>
+
+        <br>
+        <br>
+        <!--ESPACIO PARA RUTINAS REALIZADAS-->
+        <div id="rutinas">
+            <p>Rutinas realizadas:
+                <select name="rutinas realizadas" >
+                    <option value="1">Select</option>
+                    <option value="2">Select</option>
+                    <option value="3">Select</option>
+                </select>
+            </p>
+
+            <ul>
+                <li><img src="imagenes/rutina.png" width="180px"></li>
+                <li><img src="imagenes/rutina.png" width="180px"></li>
+                <li><img src="imagenes/rutina.png" width="180px"></li>
+                <li><img src="imagenes/rutina.png" width="180px"></li>
+                <li><img src="imagenes/rutina.png" width="180px"></li>
+                <li><img src="imagenes/rutina.png" width="180px"></li>
+            </ul>
+        </div>
+
+        <br>
+        <br>
+        <!--ESPACIO PARA DIETAS REALIZADAS-->
+
+        <div id="dietas">
+            <p>Dietas realizadas:
+                <select name="Dietas realizadas">
+                    <option value="1">Select</option>
+                    <option value="2">Select</option>
+                    <option value="3">Select</option>
+                </select>
+            </p>
+
+            <ul>
+                <li><img src="imagenes/rutina.png" width="180px"></li>
+                <li><img src="imagenes/rutina.png" width="180px"></li>
+                <li><img src="imagenes/rutina.png" width="180px"></li>
+                <li><img src="imagenes/rutina.png" width="180px"></li>
+                <li><img src="imagenes/rutina.png" width="180px"></li>
+                <li><img src="imagenes/rutina.png" width="180px"></li>
+            </ul>
+        </div>
+        <br>
+
+        <div id="linea_temporal">
+            <p>Linea Temporal:
+                <select name="Linea temporal">
+                    <option value="1">Select</option>
+                    <option value="2">Select</option>
+                    <option value="3">Select</option>
+                </select>
+            </p>
+
+            <img src="imagenes/grafico-de-linea-simple.png" width="400px">0
+
+        </div>
+        <br>
+
+
+
+        <footer><center>Random Gym brought to you by NSFW Corporation Inc. All Rights Reserved 2022</center></footer>
+    </body>
+
+</html>
