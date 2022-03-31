@@ -1,0 +1,104 @@
+#barrasuperior{
+    list-style-type: none;
+    display:inline-flex;
+}
+
+#barrasuperior{
+    padding-top: 20px;
+}
+
+header{
+    background-color: darkred;
+}
+
+header hr{
+    border-color: red;
+    height: 10px;
+    background-color: red;
+}
+
+#titulo li{
+    padding: 10%;
+}
+
+#menu{
+    list-style-type: none;
+    display: inline-flex;
+    padding-left: 35px;
+    padding-top: 85px;
+    float: left;
+}
+
+#menu li{
+    text-align: center;
+    padding-left: 25px;
+    flex-wrap: nowrap;
+}
+
+#menu li a{
+    background-color: lightgrey;
+    border: 5px ridge rgb(54, 54, 54);
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#menu li a:hover{
+    background-color: red;
+    color: white;
+}
+
+#buscador{
+    padding-top: 65px;
+    padding-left: 140px;
+}
+
+#buscador p{
+    font-size:20px;
+    color:white;
+    text-align:center;
+}
+
+#buscador input{
+    border: 2px ridge black;
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#loggers{
+    list-style-type: none;
+    display:block;
+    padding-top: 20px;
+    padding-left: 118px;
+}
+
+#loggers li{
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#loggers li a{
+    background-color: lightgrey;
+    border: 5px ridge rgb(54, 54, 54);
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#loggers li a:hover{
+    background-color: red;
+    color: white;
+}
