@@ -2,25 +2,32 @@
     list-style-type: none;
     display:inline-flex;
     padding-top: 20px;
+    padding-bottom:5px;
 }
 
 header{
-    background-color: darkred;
     background-image: url('../imagenes/redpattern.jpg');
     background-color: transparent;
 }
 
 header hr{
-    border-color: rgb(61, 0, 0);
-    background-color: rgb(53, 0, 0);
-    height: 1px;
-    border-bottom-style: ridge;
-    border-bottom-width: 4px;
+    border-color: rgb(85, 0, 0);
+    height: 0;
+    border-top-style: ridge;
+    border-width: 0;
+    border-top-width: 10px;
 }
 
-#titulo li{
-    padding-top: 5%;
-    padding-left: 10%;
+.logo{
+    padding-top: 10px;
+    padding-left: 80px;
+}
+
+.logo img {
+    transition: transform 0.3s ease;
+}
+.logo:hover img {
+    transform: scale(1.2,1.2);
 }
 
 #menu{
@@ -40,7 +47,7 @@ header hr{
 #menu li a{
     background-color: rgb(54, 54, 54);
     border: 5px ridge lightgrey;
-    border-radius: 20px;
+    border-radius: 15px;
     text-decoration: none;
     color: white;
     font-size: 30px;
@@ -52,12 +59,12 @@ header hr{
 
 #menu li a:hover{
     background-color: red;
-    color: black;
-    font-style:oblique;
+    -webkit-text-stroke: 1px black;
+
 }
 
 #buscador{
-    padding-top: 5%;
+    padding-top: 7px;
     padding-left: 215px;
     padding-bottom: 10px;
 }
@@ -69,7 +76,7 @@ header hr{
 }
 
 #buscador input{
-    border: 2px ridge black;
+    border: 2px solid black;
     width: 250px;
     height: 30px;
     font-size: 20px;
@@ -80,21 +87,22 @@ header hr{
 #loggers{
     list-style-type: none;
     display:flex;
-    padding-left: 125px;
+    padding-left: 140px;
+    white-space: nowrap;
 }
 
 #loggers li{
     padding-bottom: 20px;
-    padding-left: 10px;
+    padding-left: 5px;
     font-size: 30px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 #loggers li a{
     background-color: lightgrey;
-    border: 5px ridge rgb(54, 54, 54);
-    border-radius: 20px;
+    border: 3px ridge rgb(54, 54, 54);
+    border-radius: 30px;
     text-decoration: none;
     color: black;
     font-size: 30px;
@@ -105,6 +113,6 @@ header hr{
 #loggers li a:hover{
     background-color: red;
     color: white;
-    font-style: oblique;
+    -webkit-text-stroke: 1px black;
 }
 

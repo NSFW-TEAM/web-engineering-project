@@ -1,65 +1,74 @@
-<!DOCTYPE html><!--indica tipo de pagina en este caso html 5--> <!--para validar html buscar validator html-->
-<html lang="es"> <!--lang indica idioma a escribir-->
-    <head> <!---->
-        <meta charset="utf-8"/> <!---charset indica configuracion de la codificacion-->
-        <title>Random Gym</title> <!--nombre de la pagina-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Random GYM</title>
         <link rel="stylesheet" type="text/css" href="css/reset.css"/>
-        <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,600&display=swap" rel="stylesheet">
     </head>
 
     <body>
+
         <header>
             <ul id="barrasuperior">
-                <ul id="titulo">
-                    <li>
-                        <img src="imagenes/logo_randomgym.png" height="150px" title="logo randomgym"/>
-                    </li>
-                </ul>
+                <span class="logo">
+                    <img src="imagenes/logo_randomgym.png" height="140px" title="Ir al inicio" alt="Logo"/>
+                </span>
                 <ul id="menu">
                     <li><a href="#">Comienza ahora</a></li>
-                    <li><a href="profile.html">Rutina aleatoria</a></li>
-                    <li><a href="profile.html">Alimentación aleatoria</a></li>
-                    <li><a href="profile.html">Quienes somos</a></li>
+                    <li><a href="ejercicio.html">Ejercicio Aleatorio</a></li>
+                    <li><a href="nutricional.html">Información Nutricional</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <ul id="loggers">
+                            <li><a href="login.html">Iniciar sesión</a></li>
+                            <li><a href="register.html">Registrarse</a></li>
+                        </ul>
+                    </li>
+                    <li id="buscador">
+                        <p>Barra de búsqueda:</p>
+                        <input type="text" placeholder="Ej: Tríceps, espalda, etc..."/>
+                    </li>
                 </ul>
             </ul>
             <hr>
         </header>
 
-        <section id="inicio">
-            <ul>
+        <div class="quickstart-container">
+            <img src="imagenes/therock.png" height="700px">
+            <ul class="quickstart-text">
                 <li>
-                    <img id="erik" src="imagenes/erik.JPG" title="erik" width="700px" height="400px">
+                    <p class="texto-grande">te damos la bienvenida a random gym</p>
                 </li>
                 <li>
-                    <img id="flecha" src="imagenes/arrow.png" title="arrow" width="100%">
+                    <p class="texto-chico">Si lo que buscas es generar un cambio radical en tu vida, añadir variedad a
+                        <br>tu rutina de ejercicios y/o mejorar tu alimentación, estás en el sitio web ideal.
+                        <br><br>No importa tu experiencia, si creas una cuenta, recibirás rutinas 
+                        <br>personalizadas y aleatorias adaptadas a tu nivel.
+                        <br><br><br>Comienza ahora, pulsa el botón:</p>
                 </li>
+                <br><br><br><br>
                 <li>
-                    <img src="imagenes/vadym.jfif" title="vadym" width="700px" height="400px">
+                    <div class="texto-boton">
+                        <a href="register.html">quiero ser la mejor versión de mi mismo</a>
+                    </div>
                 </li>
             </ul>
-        </section>
+            
+        </div>
 
-        <!--
-        <section id="contacto">
-            <form>
-                <ul>
-                    <li>
-                        <label>Nombre Completo</label>
-                        <input type="text" id="nombre"/>
-                    </li>
-                    <li>
-                        <label>Numero Telefono</label>
-                        <input type="number" id="numeroT">
-                    </li>
-                </ul>
-            </form>
+        <footer>
+            <center>
+                Random Gym brought to you by NSFW Corporation Inc. All Rights Reserved 2022
+            </center>
+        </footer>
 
-        </section>
-        -->
-        <footer><center>Random Gym brought to you by NSFW Corporation Inc. All Rights Reserved 2022</center></footer>
     </body>
 
 </html>
