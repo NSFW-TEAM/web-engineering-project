@@ -1,46 +1,48 @@
 #barrasuperior{
     list-style-type: none;
     display:inline-flex;
-}
-
-#barrasuperior{
     padding-top: 20px;
 }
 
 header{
     background-color: darkred;
+    background-image: url('../imagenes/redpattern.jpg');
+    background-color: transparent;
 }
 
 header hr{
-    border-color: red;
-    height: 10px;
-    background-color: red;
+    border-color: rgb(61, 0, 0);
+    background-color: rgb(53, 0, 0);
+    height: 1px;
+    border-bottom-style: ridge;
+    border-bottom-width: 4px;
 }
 
 #titulo li{
-    padding: 10%;
+    padding-top: 5%;
+    padding-left: 10%;
 }
 
 #menu{
     list-style-type: none;
     display: inline-flex;
-    padding-left: 35px;
-    padding-top: 85px;
-    float: left;
+    padding-left: 60px;
+    padding-top: 60px;
 }
 
 #menu li{
     text-align: center;
     padding-left: 25px;
     flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 #menu li a{
-    background-color: lightgrey;
-    border: 5px ridge rgb(54, 54, 54);
+    background-color: rgb(54, 54, 54);
+    border: 5px ridge lightgrey;
     border-radius: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 30px;
     padding-left: 30px;
     padding-right: 30px;
@@ -50,18 +52,20 @@ header hr{
 
 #menu li a:hover{
     background-color: red;
-    color: white;
+    color: black;
+    font-style:oblique;
 }
 
 #buscador{
-    padding-top: 65px;
-    padding-left: 140px;
+    padding-top: 5%;
+    padding-left: 215px;
+    padding-bottom: 10px;
 }
 
 #buscador p{
     font-size:20px;
     color:white;
-    text-align:center;
+    text-align:left;
 }
 
 #buscador input{
@@ -69,19 +73,19 @@ header hr{
     width: 250px;
     height: 30px;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
 }
 
 #loggers{
     list-style-type: none;
-    display:block;
-    padding-top: 20px;
-    padding-left: 118px;
+    display:flex;
+    padding-left: 125px;
 }
 
 #loggers li{
     padding-bottom: 20px;
+    padding-left: 10px;
     font-size: 30px;
     text-align: center;
     padding-top: 30px;
@@ -101,4 +105,6 @@ header hr{
 #loggers li a:hover{
     background-color: red;
     color: white;
+    font-style: oblique;
 }
+
