@@ -5,12 +5,73 @@ html{
     font-family: 'Bebas Neue', cursive;
 }
 
+hr{
+    border-color: red;
+    height: 10px;
+    background-color: red;
+}
+
+header{
+    background-color: darkred;
+}
+
+#barrasuperior{
+    list-style-type: none;
+    display:inline-flex;
+}
+
+#barrasuperior li{
+    padding-top: 80px;
+}
+
+#titulo li{
+    padding: 20px;
+}
+
 #erik:hover{
     background-color: red;
 }
 
 #flecha:hover{
     background-color: blue;
+}
+
+#menu{
+    list-style-type: none;
+    display: inline-flex;
+    float: top;
+}
+
+#menu li{
+    text-align: center;
+    margin: 0 0 30px 30px;
+    flex-wrap: nowrap;
+}
+
+#menu li a{
+    background-color: lightgrey;
+    border: 5px ridge rgb(54, 54, 54);
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#menu li a:hover{
+    background-color: aqua;
+    color: rgb(255, 0, 0);
+}
+
+#menu li a:visited{
+    color: purple;
+}
+
+#menu li a:visited:hover{
+    background-color: aqua;
+    color: rgb(255, 0, 0);
 }
 
 #inicio ul{
@@ -46,11 +107,3 @@ html{
     color: black;
 }
 
-#boton_comienzo{
-    position: absolute;
-    overflow: hidden;
-}
-
-#man{
-    z-index: -1;
-}

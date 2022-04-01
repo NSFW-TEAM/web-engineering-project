@@ -1,5 +1,5 @@
 html{
-    background-color: aliceblue;
+    background-color: rgb(31, 31, 31);
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -109,12 +109,10 @@ header{
     background-color: black;
     box-shadow: 7px 13px 37px rgba(182, 180, 180, 0);
     width: 400px;
-    height: 500px;
+    height: 340px;
     padding-top: 10%;
     align-content: center;
     margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 
@@ -135,22 +133,17 @@ header{
     border-radius: 30px;
 }
 
-#bg{
-    background-color: aliceblue;
-}
-
 .boton_summit{
     display:inline-flex;
     align-items: center;
     justify-content: center;
     width:180px;
-    height:30px;
+    height:75px;
     background: rgb(32, 102, 36);
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 10px;
     border:none;
     cursor: pointer;
     transition: .3s ease all;

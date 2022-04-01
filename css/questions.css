@@ -99,7 +99,7 @@ form{
     top: -300px;
     left: 0;
     border-radius:0px 0px 300px 300px;
-    transition: .3s ease-in-out all;
+    transition: .7s ease-in-out all;
 }
 
 .boton:hover::after{
@@ -125,7 +125,6 @@ form input{
     border: 4px solid rgb(76, 0, 19);
     border-radius: 4px;
 }
-
 
 .boton_summit{
     display:inline-flex;
