@@ -3,9 +3,11 @@
     <head> <!---->
         
         <meta charset="utf-8"/> <!---charset indica configuracion de la codificacion-->
-        <title>Profile</title> <!--nombre de la pagina-->
+        <title>Random Gym</title> <!--nombre de la pagina-->
+        <link rel="shortcut icon" href="imagenes/logo_randomgym.png">
         <link rel="shortcut icon" href="imagenes/logo_randomgym.png">
         <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
         <link rel="stylesheet" type="text/css" href="css/profile.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,16 +18,24 @@
     <body>
         <header>
             <ul id="barrasuperior">
-                <ul id="titulo">
-                    <li>
-                        <img src="imagenes/logo_randomgym.png" height="150px" title="logo randomgym"/>
-                    </li>
-                </ul>
+                <span class="logo">
+                    <img src="imagenes/logo_randomgym.png" onclick="location.href='index.html'" height="140px" title="Ir al inicio" alt="Logo"/>
+                </span>
                 <ul id="menu">
-                    <li><a href="#">Comienza ahora</a></li>
-                    <li><a href="index.html">Rutina aleatoria</a></li>
-                    <li><a href="index.html">Alimentación aleatoria</a></li>
-                    <li><a href="index.html">Quienes somos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="ejercicioAleatorio.html">Ejercicio Aleatorio</a></li>
+                    <li><a href="nutricional.html">Información Nutricional</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <ul id="loggers">
+                            <li><a href="profile.html">Username</a></li>
+                        </ul>
+                    </li>
+                    <li id="buscador">
+                        <p>Barra de búsqueda:</p>
+                        <input type="text" placeholder="Ej: Tríceps, espalda, etc..."/>
+                    </li>
                 </ul>
             </ul>
             <hr>

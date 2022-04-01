@@ -3,9 +3,10 @@
     <head> <!---->
         
         <meta charset="utf-8"/> <!---charset indica configuracion de la codificacion-->
-        <title>Questions</title> <!--nombre de la pagina-->
+        <title>Random Gym</title> <!--nombre de la pagina-->
         <link rel="shortcut icon" href="imagenes/logo_randomgym.png">
         <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
         <link rel="stylesheet" type="text/css" href="css/questions.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,40 +18,30 @@
     <body>
         <header>
             <ul id="barrasuperior">
-                <ul id="titulo">
-                    <li>
-                        <img src="imagenes/logo_randomgym.png" height="150px" title="logo randomgym"/>
-                    </li>
-                </ul>
+                <span class="logo">
+                    <img src="imagenes/logo_randomgym.png" onclick="location.href='index.html'" height="140px" title="Ir al inicio" alt="Logo"/>
+                </span>
                 <ul id="menu">
-                    <li><a href="#">Comienza ahora</a></li>
-                    <li><a href="index.html">Rutina aleatoria</a></li>
-                    <li><a href="index.html">Alimentación aleatoria</a></li>
-                    <li><a href="index.html">Quienes somos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="ejercicioAleatorio.html">Ejercicio Aleatorio</a></li>
+                    <li><a href="nutricional.html">Información Nutricional</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <ul id="loggers">
+                            <li><a href="login.html">Iniciar sesión</a></li>
+                            <li><a href="signin.html">Registrarse</a></li>
+                        </ul>
+                    </li>
+                    <li id="buscador">
+                        <p>Barra de búsqueda:</p>
+                        <input type="text" placeholder="Ej: Tríceps, espalda, etc..."/>
+                    </li>
                 </ul>
             </ul>
             <hr>
         </header>
-        <!--
-        <form action="google.com" method="get">
-            <br>
-            <p>¿Cual es tu sexo?
-                <br>
-                <label><input type="button" name="hombre" value="Masculino" class="boton"></label>
-                <label ><input type="button" name="mujer" value="Femenino" class="boton"></label>
-            </p>
-            <br>
-            <p>¿Que deseas trabajar?
-                <br>
-                <label><input type="button" name="perder_peso" value="Perder Peso" class="boton"></label>
-                <label><input type="button" name="ganar_peso" value="Ganar Peso" class="boton"></label>
-                <label><input type="button" name="tonificacion" value="Tonificación" class="boton"></label>
-                <label><input type="button" name="mantencion" value="Mantención" class="boton"></label>
-            </p>
 
-        </form>
-        <br>
-        -->
         <form>
             <br>
             <p>¿Cual es tu sexo?

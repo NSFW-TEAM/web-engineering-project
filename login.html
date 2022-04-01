@@ -3,8 +3,10 @@
     <head> <!---->
         <meta charset="utf-8"/> <!---charset indica configuracion de la codificacion-->
         <title>Random Gym</title> <!--nombre de la pagina-->
+        <link rel="shortcut icon" href="imagenes/logo_randomgym.png">
         <link rel="stylesheet" type="text/css" href="css/reset.css"/>
         <link rel="stylesheet" type="text/css" href="css/login.css"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -13,16 +15,25 @@
     <body>
         <header>
             <ul id="barrasuperior">
-                <ul id="titulo">
-                    <li>
-                        <img src="imagenes/logo_randomgym.png" height="150px" title="logo randomgym"/>
-                    </li>
-                </ul>
+                <span class="logo">
+                    <img src="imagenes/logo_randomgym.png" onclick="location.href='index.html'" height="140px" title="Ir al inicio" alt="Logo"/>
+                </span>
                 <ul id="menu">
-                    <li><a href="#">Comienza ahora</a></li>
-                    <li><a href="profile.html">Rutina aleatoria</a></li>
-                    <li><a href="profile.html">Alimentación aleatoria</a></li>
-                    <li><a href="profile.html">Quienes somos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="ejercicioAleatorio.html">Ejercicio Aleatorio</a></li>
+                    <li><a href="nutricional.html">Información Nutricional</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <ul id="loggers">
+                            <li><a href="login.html">Iniciar sesión</a></li>
+                            <li><a href="signin.html">Registrarse</a></li>
+                        </ul>
+                    </li>
+                    <li id="buscador">
+                        <p>Barra de búsqueda:</p>
+                        <input type="text" placeholder="Ej: Tríceps, espalda, etc..."/>
+                    </li>
                 </ul>
             </ul>
             <hr>
@@ -30,14 +41,15 @@
 
         <div id="login">
             <ul>
+                <h1 id="titulos"><center>Incio de sesión</center></h1>
+                <br>
                 <li><center>Nombre de usuario</center></li>
                 <li><center><input type="text"></center></li>
                 <br>
                 <li><center>Contraseña</center></li>
                 <li><center><input type="password"></center></li>
                 <br>
-                <li><center><button value="inciar_sesion" class ="boton_summit"><span>Iniciar sesión</span> </button></center></li>
-
+                <li><center><button value="inciar_sesion" onclick="location.href='profile.html'" class ="boton_summit"><span>Iniciar sesión</span> </button></center></li>
             </ul>
 
         </div>

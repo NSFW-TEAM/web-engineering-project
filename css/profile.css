@@ -15,58 +15,9 @@ header{
     background-color: darkred;
 }
 
-#barrasuperior{
-    list-style-type: none;
-    display:inline-flex;
-}
-
-#barrasuperior li{
-    padding-top: 80px;
-}
-
 #titulo li{
     padding: 20px;
 }
-
-#menu{
-    list-style-type: none;
-    display: inline-flex;
-    float: top;
-}
-
-#menu li{
-    text-align: center;
-    margin: 0 0 30px 30px;
-    flex-wrap: nowrap;
-}
-
-#menu li a{
-    background-color: lightgrey;
-    border: 5px ridge rgb(54, 54, 54);
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-#menu li a:hover{
-    background-color: aqua;
-    color: rgb(255, 0, 0);
-}
-
-#menu li a:visited{
-    color: purple;
-}
-
-#menu li a:visited:hover{
-    background-color: aqua;
-    color: rgb(255, 0, 0);
-}
-
-
 
 
 #user{
@@ -82,19 +33,6 @@ header{
 
 #user:hover{
     cursor: pointer;
-}
-
-#user::after{
-    content:"";
-    background-color: gray;
-    width: 70%;
-    height: 70%;
-    position: absolute;
-    z-index: 1;
-    top: 50px;
-    left: -300px;
-    border-radius:0px 500px 500px;
-    transition: .5s ease-in-out all;
 }
 
 #user:hover::after{

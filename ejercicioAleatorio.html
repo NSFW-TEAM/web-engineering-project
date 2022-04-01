@@ -1,0 +1,103 @@
+<!DOCTYPE html><!--indica tipo de pagina en este caso html 5--> <!--para validar html buscar validator html-->
+<html lang="es"> <!--lang indica idioma a escribir-->
+    <head> <!---->
+        <meta charset="utf-8"/> <!---charset indica configuracion de la codificacion-->
+        <title>Random Gym</title> <!--nombre de la pagina-->
+        <link rel="shortcut icon" href="imagenes/logo_randomgym.png">
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/ejercicioAleatorio.css"/>
+        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <ul id="barrasuperior">
+                <span class="logo">
+                    <img src="imagenes/logo_randomgym.png" onclick="location.href='index.html'" height="140px" title="Ir al inicio" alt="Logo"/>
+                </span>
+                <ul id="menu">
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="ejercicioAleatorio.html">Ejercicio Aleatorio</a></li>
+                    <li><a href="nutricional.html">Información Nutricional</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <ul id="loggers">
+                            <li><a href="login.html">Iniciar sesión</a></li>
+                            <li><a href="signin.html">Registrarse</a></li>
+                        </ul>
+                    </li>
+                    <li id="buscador">
+                        <p>Barra de búsqueda:</p>
+                        <input type="text" placeholder="Ej: Tríceps, espalda, etc..."/>
+                    </li>
+                </ul>
+            </ul>
+            <hr>
+        </header>
+
+        <form>
+            <br>
+            <p> 
+                <h1 id="titulos">Escoge una dificultad:</h1>
+                <button value="Principiante" class="boton"><span>Principiante</span></button>
+                <button value="Medio" class="boton"><span>Medio</span></button>
+                <button value="Avanzado" class="boton"><span>Avanzado</span></button>
+                <button value="Espartano" class="boton"><span>Espartano</span></button>
+            </p>
+        </form>
+        <br>
+        <h1 id="titulos"><center>Este es tu ejercicio:</center></h1>
+        <div class="contenedor">
+            <figure>
+                <img src="https://pa1.narvii.com/6360/8ece8369739932d6925a85993c768c48bda21a27_hq.gif">
+                <div class="capa">
+                    <h3 id="titulos">Explicación:</h3>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet<br>
+                        consectetur adipisicing elit. Labore saepe ab, <br>
+                        quasi praesentium atque <br>
+                        exercitationem placeat, voluptas<br> 
+                        aspernatur ipsam voluptatibus <br>
+                        illo magnam earum possimus <br>
+                        beatae dolor tenetur <br>
+                        fugit voluptatum similique!<br>
+                    </p> 
+                    <br>
+                    <h3 id="titulos">Duración:</h3>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet<br>
+                        consectetur adipisicing elit. Labore saepe ab, <br>
+                        quasi praesentium atque <br>
+                        exercitationem placeat, voluptas<br> 
+                        aspernatur ipsam voluptatibus <br>
+                        illo magnam earum possimus <br>
+                        beatae dolor tenetur <br>
+                        fugit voluptatum similique!<br>
+                    </p>
+                    <br>
+                    <h3 id="titulos">Zona trabajada:</h3>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet<br>
+                        consectetur adipisicing elit. Labore saepe ab, <br>
+                        quasi praesentium atque <br>
+                        exercitationem placeat, voluptas<br> 
+                        aspernatur ipsam voluptatibus <br>
+                        illo magnam earum possimus <br>
+                        beatae dolor tenetur <br>
+                        fugit voluptatum similique!<br>
+                    </p>
+                    <br>
+                </div>
+            </figure>
+        </div>
+        <footer><center>Random Gym brought to you by NSFW Corporation Inc. All Rights Reserved 2022</center></footer>
+    </body>
+
+</html>
