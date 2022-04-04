@@ -1,8 +1,8 @@
 #barrasuperior{
     list-style-type: none;
     display:inline-flex;
-    padding-top: 20px;
-    padding-bottom:5px;
+    padding-top: 1%;
+    padding-bottom:1%;
 }
 
 header{
@@ -11,7 +11,7 @@ header{
 }
 
 header hr{
-    border-color: rgb(85, 0, 0);
+    border-top-color: rgb(85, 0, 0);
     height: 0;
     border-top-style: ridge;
     border-width: 0;
@@ -19,8 +19,8 @@ header hr{
 }
 
 .logo{
-    padding-top: 10px;
-    padding-left: 80px;
+    padding-top: 1%;
+    padding-left: 5%;
 }
 
 .logo img {
@@ -33,13 +33,13 @@ header hr{
 #menu{
     list-style-type: none;
     display: inline-flex;
-    padding-left: 60px;
-    padding-top: 60px;
+    padding-left: 4%;
+    padding-top: 4.5%;
 }
 
 #menu li{
     text-align: center;
-    padding-left: 25px;
+    padding-left: 6%;
     flex-wrap: nowrap;
     white-space: nowrap;
 }
@@ -64,15 +64,16 @@ header hr{
 }
 
 #buscador{
-    padding-top: 7px;
-    padding-left: 215px;
-    padding-bottom: 10px;
+    padding-top: 5%;
+    padding-left: 80%;
+    padding-bottom: 1%;
 }
 
 #buscador p{
     font-size:20px;
     color:white;
     text-align:left;
+    white-space: nowrap;
 }
 
 #buscador input{
@@ -86,17 +87,17 @@ header hr{
 
 #loggers{
     list-style-type: none;
-    display:flex;
-    padding-left: 140px;
+    display:inline-flex;
+    padding-left: 60%;
     white-space: nowrap;
 }
 
 #loggers li{
-    padding-bottom: 20px;
-    padding-left: 5px;
+    padding-bottom: 5%;
+    padding-left: 3%;
     font-size: 30px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 5%;
 }
 
 #loggers li a{
