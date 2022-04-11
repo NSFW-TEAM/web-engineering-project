@@ -3,46 +3,47 @@
     <head>
         <meta charset="utf-8"/>
         <title>Random Gym</title> <!--nombre de la pagina-->
-        <link rel="shortcut icon" href="imagenes/logo_randomgym.png">
+        <link rel="shortcut icon" type="image/png" href="imagenes/logo_randomgym.png">
         <link rel="stylesheet" type="text/css" href="css/reset.css"/>
         <link rel="stylesheet" type="text/css" href="css/menu.css"/>
         <link rel="stylesheet" type="text/css" href="css/index.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> <!--texto grande (daddy day)-->
+        <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,600&display=swap" rel="stylesheet"> <!--texto mediano (anybody)-->
     </head>
 
     <body>
 
         <header>
-            <ul id="barrasuperior">
-                <span class="logo">
-                    <img src="imagenes/logo_randomgym.png" onclick="location.href='index.html'" height="140px" title="Ir al inicio" alt="Logo"/>
-                </span>
-                <ul id="menu">
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="ejercicioAleatorio.html">Ejercicio Aleatorio</a></li>
-                    <li><a href="nutricional.html">Información Nutricional</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <ul id="loggers">
-                            <li><a href="login.html">Iniciar sesión</a></li>
-                            <li><a href="signin.html">Registrarse</a></li>
-                        </ul>
-                    </li>
-                    <li id="buscador">
-                        <p>Barra de búsqueda:</p>
-                        <input type="text" placeholder="Ej: Tríceps, espalda, etc..."/>
-                    </li>
-                </ul>
-            </ul>
+            
+            <div id="logo">
+                <img src="imagenes/logo_randomgym.png" onclick="location.href='index.html'" title="Ir al inicio" alt="Logo"/>
+            </div>
+
+            <nav>
+                <a href="#">Contacto</a>
+                <a href="ejercicioAleatorio.html">Ejercicio Aleatorio</a>
+                <a href="nutricional.html">Información Nutricional</a>
+            </nav>
+
+            <div id="buscador">
+                <p>Barra de búsqueda:</p>
+                <input type="text" placeholder="Ej: Tríceps, espalda, etc..."/>
+            </div>
+
+            <div id="loggers">
+                <a href="login.html">Iniciar sesión</a>
+                <br/><br/>
+                <a href="signin.html" style="margin-left: 6px">Registrarse</a>
+            </div>
+
             <hr>
+
         </header>
 
         <div class="quickstart-container">
-            <img src="imagenes/therock.png" height="700px">
+            <img src="imagenes/therock.png">
             <ul class="quickstart-text">
                 <li>
                     <p class="texto-grande">te damos la bienvenida a random gym</p>
