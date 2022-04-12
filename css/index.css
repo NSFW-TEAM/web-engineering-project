@@ -21,34 +21,29 @@ body{
     height: 95%;
     bottom:0;
     right:0;
-    padding-right: 60px;
+    padding-right: 4%;
 }
 
 .quickstart-text{
     list-style-type: none;
+    width: 70%;
     display:block;
     text-align:center;
+    padding-top: 2%;
 }
 
 .texto-grande{
-    padding-top: 50px;
-    padding-right: 550px;
-    font-size: 75px;
+    font-size: 5em;
     color: white;
     -webkit-text-stroke: 2px black;
 }
 
 .texto-chico{
     font-family: 'Anybody', cursive;
-    padding-top: 50px;
-    padding-right: 550px;
-    font-size: 30px;
-    line-height: 37px;
+    padding-top: 5%;
+    font-size: 1.9em;
+    line-height: 1.45em;
     color: white;
-}
-
-.texto-boton{
-    top :0;
 }
 
 .texto-boton a{
@@ -60,13 +55,12 @@ body{
     color:white;
     padding-left: 10px;
     padding-right: 10px;
-    margin-right: 550px;
-    font-size: 50px;
+    font-size: 3.5em;
     transition: font-size 0.3s ease;
 }
 
 .texto-boton a:hover{
-    font-size: 54px;
+    font-size: 3.7em;
     background-color: white;
     color: black;
     -webkit-text-stroke: 0;
@@ -76,7 +70,7 @@ footer{
     font-family: 'Anybody', cursive;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 15px;
+    font-size: 1em;
     color: white;
 }
 
@@ -91,31 +85,3 @@ footer{
     background-attachment: fixed;
 }
 */
-
-
-
-
-
-
-
-
-/*
-#boton_comienzo{
-    position: absolute;
-    top:0;
-}
-
-.container{
-    position:relative;
-    text-align:center;
-    color:white;
-}
-
-.container img{
-    width:100%;
-}
-
-.botoncont{
-    position:absolute;
-    bottom:50%;
-}*/
