@@ -14,40 +14,43 @@
 
     <body>
         <header>
-            <ul id="barrasuperior">
-                <span class="logo">
-                    <img src="imagenes/logo_randomgym.png" onclick="location.href='index.html'" height="140px" title="Ir al inicio" alt="Logo"/>
-                </span>
-                <ul id="menu">
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="ejercicioAleatorio.html">Ejercicio Aleatorio</a></li>
-                    <li><a href="nutricional.html">Información Nutricional</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <ul id="loggers">
-                            <li><a href="login.html">Iniciar sesión</a></li>
-                            <li><a href="signin.html">Registrarse</a></li>
-                        </ul>
-                    </li>
-                    <li id="buscador">
-                        <p>Barra de búsqueda:</p>
-                        <input type="text" placeholder="Ej: Tríceps, espalda, etc..."/>
-                    </li>
-                </ul>
-            </ul>
+            
+            <div id="logo">
+                <img src="imagenes/logo_randomgym.png" onclick="location.href='index.html'" title="Ir al inicio" alt="Logo"/>
+            </div>
+
+            <nav>
+                <a href="#">Contacto</a>
+                <a href="ejercicioAleatorio.html">Ejercicio Aleatorio</a>
+                <a href="nutricional.html">Información Nutricional</a>
+            </nav>
+
+            <div id="buscador">
+                <p>Barra de búsqueda:</p>
+                <input type="text" placeholder="Ej: Tríceps, espalda, etc..."/>
+            </div>
+
+            <div id="loggers">
+                <a href="login.html">Iniciar sesión</a>
+                <br/><br/>
+                <a href="signin.html" style="margin-left: 6px">Registrarse</a>
+            </div>
+
             <hr>
+
         </header>
 
         <form>
             <br>
-            <p> 
+            <div>
                 <h1 id="titulos">Escoge una dificultad:</h1>
-                <button value="Principiante" class="boton"><span>Principiante</span></button>
-                <button value="Medio" class="boton"><span>Medio</span></button>
-                <button value="Avanzado" class="boton"><span>Avanzado</span></button>
-                <button value="Espartano" class="boton"><span>Espartano</span></button>
-            </p>
+                <input type="radio" id="dif1" value="principiante" name="dificultad" hidden>
+                <input type="radio" id="dif2" value="intermedio" name="dificultad" hidden>
+                <input type="radio" id="dif3" value="avanzado" name="dificultad" hidden>
+                <input type="radio" id="dif4" value="espartano" name="dificultad" hidden>
+            </div>
+            <br>
+
         </form>
         <br>
         <h1 id="titulos"><center>Este es tu ejercicio:</center></h1>
