@@ -4,7 +4,6 @@ function randomNumber(min, max) {
 
 window.onload = function() {
     var audio = new Audio('sonidos/amogus.ogg');
-    for(var i=0;i<5;i++){
-        setTimeout(() => { audio.play();},randomNumber(1,5)*200);
-    }
+    audio.setAttribute('loop', 'loop');
+    audio.play();
 }

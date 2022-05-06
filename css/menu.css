@@ -1,105 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,600&display=swap');
-
-header{
-    font-family: 'Bebas Neue', cursive;
-    background-image: url('../imagenes/redpattern.jpg');
-    background-color: transparent;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,600&display=swap");
+header {
+  font-family: "Bebas Neue", cursive;
+  background-image: url("../imagenes/redpattern.jpg");
+  background-color: transparent;
 }
 
-header hr{
-    margin: 0;
-    border-top-color: rgb(85, 0, 0);
-    height: 0;
-    border-top-style: solid;
-    border-width: 0;
-    border-top-width: 5px;
+header hr {
+  margin: 0;
+  height: 0;
+  border-top-color: #550000;
+  border-top-style: solid;
+  border-width: 0;
+  border-top-width: 5px;
 }
 
-#logo {
-    display: inline-block;
-    width: 13%;
-    height: 13%;
-    padding: 1.5% 3% 1.5% 3%;
+header #logo {
+  display: inline-block;
+  width: 13%;
+  height: 13%;
+  padding: 1.5% 3% 1.5% 3%;
 }
 
-#logo img {
-    width: 100%;
-    transition: transform 0.3s ease;
+header #logo img {
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-#logo:hover img {
-    transform: scale(1.2,1.2);
+header #logo:hover img {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
 }
 
-nav{
-    display: inline-flex;
-    position: absolute;
-    padding-top: 4%;
+header nav {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  padding-top: 4%;
 }
 
-nav a{
-    height: 1em;
-    white-space: nowrap;
-    text-align: center;;
-    background-color: rgb(54, 54, 54);
-    border: 4px inset lightgrey;
-    border-radius: 15px;
-    text-decoration: none;
-    color: white;
-    font-size: 2em;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+header nav a {
+  height: 1em;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  background-color: #363636;
+  border-width: 4px;
+  border-style: inset;
+  border-color: lightgrey;
+  border-radius: 15px;
+  color: white;
+  font-size: 2em;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-nav a:hover{
-    background-color: red;
-    -webkit-text-stroke: 1px black;
+header nav a:hover {
+  background-color: red;
+  -webkit-text-stroke: 1px black;
 }
 
-#buscador{
-    position: absolute;
-    right: 18%;
-    top: 0;
-    padding-top: 4%;
-    font-size: 1.5em;
-    color: white;
+header #buscador {
+  position: absolute;
+  right: 18%;
+  top: 0;
+  padding-top: 4%;
+  font-size: 1.5em;
+  color: white;
 }
 
-#buscador input{
-    font-size: 0.8em;
-    border: lightgrey;
-    height: 1.5em;
-    border-radius: 10px;
+header #buscador input {
+  font-size: 0.8em;
+  height: 1.5em;
+  border-color: lightgrey;
+  border-radius: 10px;
 }
 
-#loggers{
-    position: absolute;
-    right: 7%;
-    top: 0;
-    padding-top: 3.2%;
-    font-size: 2em;
-    font-style: italic;
-    white-space: nowrap;
+header #loggers {
+  position: absolute;
+  right: 7%;
+  top: 0;
+  padding-top: 3.2%;
+  font-size: 2em;
+  font-style: italic;
+  white-space: nowrap;
 }
 
-#loggers a{
-    color: black;
-    background-color: lightgrey;
-    border: 4px outset rgb(58, 58, 58);
-    border-radius: 35px;
-    text-decoration: none;
-    padding: 2% 16% 2% 16%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+header #loggers a {
+  color: black;
+  background-color: lightgrey;
+  text-decoration: none;
+  padding: 2% 16% 2% 16%;
+  border-width: 4px;
+  border-style: outset;
+  border-color: #363636;
+  border-radius: 35px;
 }
 
-#loggers a:hover{
-    background-color: red;
-    color: white;
-    -webkit-text-stroke: 1px black;
+header #loggers a margin {
+  top: 10%;
+  bottom: 10%;
 }
+
+header #loggers a:hover {
+  background-color: red;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+/*# sourceMappingURL=menu.css.map */
