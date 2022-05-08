@@ -1,117 +1,21 @@
 html {
-  background-color: #1f1f1f;
-  font-family: 'Bebas Neue', cursive;
+  background-color: black;
 }
 
-hr {
-  border-color: red;
-  height: 10px;
-  background-color: red;
+.containerImagenes {
+  padding: 5rem;
 }
 
-header {
-  background-color: darkred;
-}
-
-#titulo li {
-  padding: 20px;
-}
-
-#user {
-  text-align: center;
+.imagenEscalada {
   display: block;
-  color: white;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-  font-size: 1000%;
-  border: none;
-  position: relative;
-  overflow: hidden;
+  width: 100%;
 }
 
-#user:hover {
-  cursor: pointer;
-}
-
-#user:hover::after {
-  top: 0;
-}
-
-#info_user p {
-  padding: 0.3%;
+.caption {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   text-align: center;
-  font-size: x-large;
-  color: white;
-}
-
-#rutinas p {
-  padding-left: 10%;
-  font-size: x-large;
-  color: white;
-}
-
-#rutinas select {
-  padding-inline: 2%;
-  color: #0e0e0e;
-  font-size: large;
-  -webkit-text-decoration-color: black;
-          text-decoration-color: black;
-}
-
-#rutinas ul {
-  padding-left: 9%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-#rutinas li {
-  padding: 2%;
-}
-
-#dietas p {
-  padding-left: 10%;
-  font-size: x-large;
-  color: white;
-}
-
-#dietas select {
-  padding-inline: 2%;
-  color: #0e0e0e;
-  font-size: large;
-  -webkit-text-decoration-color: black;
-          text-decoration-color: black;
-}
-
-#dietas ul {
-  padding-left: 9%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-#dietas li {
-  padding: 2%;
-}
-
-#linea_temporal p {
-  text-align: center;
-  font-size: x-large;
-  color: white;
-}
-
-#linea_temporal select {
-  padding-inline: 2%;
-  color: #0e0e0e;
-  font-size: large;
-  -webkit-text-decoration-color: black;
-          text-decoration-color: black;
-}
-
-#linea_temporal img {
-  border-radius: 35px;
-  display: block;
-  margin: 0px auto;
-  padding-top: 1%;
 }
 /*# sourceMappingURL=profile.css.map */

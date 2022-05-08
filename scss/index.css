@@ -3,15 +3,6 @@ body {
   font-family: "Bebas Neue", cursive;
 }
 
-.bg-image {
-  position: relative;
-  overflow: hidden;
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: 50%;
-  padding: auto;
-}
-
 .titulo {
   color: #F9F3EE;
   font-family: "Bebas Neue", cursive;
@@ -21,8 +12,8 @@ body {
 .parrafos {
   color: #F9F3EE;
   font-family: "Bebas Neue", cursive;
-  font-size: larger;
-  -webkit-text-stroke: 0.5px #000000;
+  font-size: 20px;
+  -webkit-text-stroke: 1px #000000;
   padding: 0%;
 }
 

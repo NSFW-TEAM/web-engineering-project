@@ -58,13 +58,7 @@
 }
 
 body {
-  background-image: url("../imagenes/mazado.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  background-color: #000000;
-  background-origin: padding-box;
+  background-color: #141414;
   font-family: "Bebas Neue", cursive;
 }
 
@@ -77,42 +71,24 @@ hr {
 .contenedor {
   background-image: url("../imagenes/mazado.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: 10vh;
   background-repeat: no-repeat;
 }
 
 #login {
-  background-color: #000000;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  -webkit-box-shadow: 7px 13px 37px #414141;
-          box-shadow: 7px 13px 37px #414141;
-  width: 400px;
-  height: 400px;
-  padding-top: 10%;
-  padding-bottom: 1%;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-#login ul {
-  display: block;
-  list-style-type: none;
-}
-
-#login input {
-  padding: 0.5%;
-  text-align: center;
-  border-radius: 30px;
+  font-family: "Bebas Neue", cursive;
+  color: #F9F3EE;
 }
 
 #titulos {
-  border: #F9F3EE;
-  font-size: 25px;
+  font-family: "Bebas Neue", cursive;
   color: #ff0000;
   font-style: oblique;
+}
+
+footer {
+  background-color: #000000;
+  color: #F9F3EE;
+  font-family: "Bebas Neue", cursive;
 }
 /*# sourceMappingURL=login.css.map */

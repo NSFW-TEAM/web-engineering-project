@@ -1,128 +1,25 @@
 @import "variables";
 
+
 html{
-    background-color: $colorGris;
-    font-family: $big;
-}
-
-hr{
-    border-color: $colorRojo;
-    height: 10px;
-    background-color: $colorRojo;
-}
-
-header{
-    background-color: $verydarkred;
-}
-
-#titulo{ 
-    li{
-        padding: 20px;
-    }
+    background-color: black;
 }
 
 
-#user{
-    text-align: center;
+.containerImagenes{
+    padding: 5rem;
+}
+
+.imagenEscalada{
     display: block;
-    color: $colorBlanco;
-    transition: .3s ease all;
-    font-size: 1000%;
-    border: none;
-    position: relative;
-    overflow: hidden;
-    
-    &:hover{
-        cursor: pointer;
-        
-        &::after{
-            top: 0;
-        }
-    }
+    width: 100%;
 }
 
-
-
-
-#info_user{
-
-    p{
-        padding: 0.3%;
-        text-align: center;
-        font-size: x-large;
-        color: $colorBlanco;
-    }
+.caption{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
 }
 
-
-#rutinas{ 
-    p{
-        padding-left: 10%;
-        font-size: x-large;
-        color:$colorBlanco;
-    }
-
-    select{
-        padding-inline: 2%;
-        color: $colorNegro;
-        font-size: large;
-        text-decoration-color: $colorNegro;
-    }
-
-    ul{
-        padding-left: 9%;
-        display: inline-flex;
-    }
-
-    li{
-        padding: 2%;
-    }
-
-
-}
-
-#dietas{
-    p{
-        padding-left: 10%;
-        font-size: x-large;
-        color:$colorBlanco;
-    }
-
-    select{
-        padding-inline: 2%;
-        color: $colorNegro;
-        font-size: large;
-        text-decoration-color: $colorNegro;
-    }
-
-    ul{
-        padding-left: 9%;
-        display: inline-flex;
-    }
-
-    li{
-        padding: 2%;
-    }
-
-
-}
-
-#linea_temporal{
-    p{
-        text-align: center;
-        font-size: x-large;
-        color:$colorBlanco;
-    }
-    select{
-        padding-inline:2%;
-        color: $colorNegro;
-        font-size: large;
-        text-decoration-color: $colorNegro;   
-    }
-    img{
-        border-radius:35px;
-        display: block;
-        margin: 0px auto;
-        padding-top: 1%;
-    }
-} 
