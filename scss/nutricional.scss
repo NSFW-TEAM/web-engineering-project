@@ -1,0 +1,95 @@
+@import "variables";
+
+html{
+    background-color: $colorGris;
+    font-family: $bigfont;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    color: $colorBlancoPastel;
+    margin-top: 2%;
+}
+
+hr{
+    border-color: $colorRojo;
+    height: 10px;
+    background-color: $colorRojo;
+}
+
+header{
+    background-color: $verydarkred;
+}
+
+#titulo{
+    li{
+        padding: 20px;
+    }
+}
+
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    height: 100%;
+
+    figure{
+        background-color: ($colorBlancoPastel, 0.084);
+        position: relative;
+        height: 350px;
+        width: 1800px;
+        overflow: hidden;
+        cursor: pointer;
+
+        .capa{
+            position: absolute;
+            top:25%;
+            width: 100%;
+            height: 100%;
+            margin-left: 10%;
+            font-size: large;
+            color: $colorNegro;
+            background-color: ($colorBlancoPastel,0.6);
+            transition: all 500ms ease-out;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+        }
+
+        img{
+            margin-top: 2%;
+            margin-left: 15%;
+            width: 250px;
+            height: 250px;
+            transition: all 500ms ease-out;
+        }
+
+
+        &:hover{
+            .capa{
+                visibility: visible;
+                opacity: 1;
+                transform: translate(200px,0px);
+                color: $colorBlanco;
+            }
+
+            img{
+                opacity: 60%;
+            }
+        }
+
+        
+    }
+}

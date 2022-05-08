@@ -17,7 +17,6 @@ header hr {
 
 header #logo {
   display: inline-block;
-  cursor: pointer;
   width: 13%;
   height: 13%;
   padding: 1.5% 3% 1.5% 3%;

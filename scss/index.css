@@ -1,0 +1,36 @@
+body {
+  background-color: #141414;
+  font-family: "Bebas Neue", cursive;
+}
+
+.bg-image {
+  position: relative;
+  overflow: hidden;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: 50%;
+  padding: auto;
+}
+
+.titulo {
+  color: #F9F3EE;
+  font-family: "Bebas Neue", cursive;
+  -webkit-text-stroke: 2px #000000;
+}
+
+.parrafos {
+  color: #F9F3EE;
+  font-family: "Bebas Neue", cursive;
+  font-size: larger;
+  -webkit-text-stroke: 0.5px #000000;
+  padding: 0%;
+}
+
+footer {
+  font-family: "Anybody", cursive;
+  font-size: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffffff;
+}
+/*# sourceMappingURL=index.css.map */

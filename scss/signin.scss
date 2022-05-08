@@ -1,0 +1,61 @@
+@import "variables";
+@import "botones";
+
+html{
+    background-image: url('../imagenes/mazado.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: $colorGris;
+    background-origin: padding-box;
+    font-family: $bigfont;
+}
+
+hr{
+    border-color: $colorRojo;
+    height: 10px;
+    background-color: $colorRojo;
+}
+
+header{
+    background-color: $verydarkred;
+}
+
+#signin{
+    background-color: $colorNegro;
+    box-shadow: 7px 13px 37px $colorGris;
+    width: 400px;
+    height: 500px;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    align-content: center;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    ul{
+        display: block;
+        list-style-type: none;
+        
+        li{
+            font-size: 20px;
+            color: $colorBlancoPastel;
+            margin: 1%;
+        }
+    }
+
+    input{
+        padding: 0.5%;
+        text-align: center;
+        border-radius: 30px;
+    }
+
+}
+
+#titulos{
+    border: $colorBlancoPastel;
+    font-size: 25px;
+    color: $colorRojo;
+    font-style: oblique;
+}

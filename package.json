@@ -9,13 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/jquery": "^3.5.14",
     "http-server": "^14.1.0"
   },
-  "sass-loader": "7.3.1",
-  "dependencies": {
-    "fs": "^0.0.1-security",
-    "jquery": "^3.6.0",
-    "typings": "^2.1.1"
-  }
+  "sass-loader": "7.3.1"
 }

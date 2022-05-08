@@ -1,0 +1,42 @@
+@import "variables";
+
+body{
+    background-color: $bgcolorpage;
+    font-family: $bigfont;
+}
+
+.bg-image{
+    position: relative;
+    overflow: hidden;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding: auto;
+}
+
+
+.titulo{
+    color: $colorBlancoPastel;
+    font-family: $bigfont;
+    -webkit-text-stroke: 2px $colorNegro;
+}
+.parrafos{
+    color: $colorBlancoPastel;
+    font-family: $bigfont;
+    font-size: larger;
+    -webkit-text-stroke: 0.5px $colorNegro;
+    padding: 0%;
+}
+
+
+footer{
+    font: {
+        family: $smallfont;
+        size: 1em;
+    }
+    padding: {
+        top: 10px;
+        bottom: 10px;
+    }
+    color: $colorBlanco;
+}

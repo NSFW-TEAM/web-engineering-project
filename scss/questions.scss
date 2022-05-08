@@ -1,0 +1,33 @@
+@import "variables";
+@import "botones";
+
+
+html{
+    background-color: $colorGris;
+    font-family: $bigfont;
+}
+
+hr{
+    border-color: $colorRojo;
+    height: 10px;
+    background-color: $colorRojo;
+}
+
+header{
+    background-color: $verydarkred;
+}
+
+
+
+#titulo{ 
+    li{
+        padding: 20px;
+    }
+}
+
+
+form{
+    color: $colorBlanco;
+    font-size: 50px;
+    text-align: center;
+}

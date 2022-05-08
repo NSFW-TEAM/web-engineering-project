@@ -5,8 +5,8 @@
         <title>Random Gym</title> <!--nombre de la pagina-->
         <link rel="shortcut icon" href="imagenes/logo_randomgym.png">
         <link rel="stylesheet" type="text/css" href="css/reset.css"/>
-        <link rel="stylesheet" type="text/css" href="css/nutricional.css"/>
-        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="scss/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="scss/nutricional.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -14,31 +14,31 @@
 
     <body>
         <header>
-            <ul id="barrasuperior">
-                <span class="logo">
-                    <img src="imagenes/logo_randomgym.png" onclick="location.href='index.html'" height="140px" title="Ir al inicio" alt="Logo"/>
-                </span>
-                <ul id="menu">
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="ejercicioAleatorio.html">Ejercicio Aleatorio</a></li>
-                    <li><a href="nutricional.html">Información Nutricional</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <ul id="loggers">
-                            <li><a href="login.html">Iniciar sesión</a></li>
-                            <li><a href="signin.html">Registrarse</a></li>
-                        </ul>
-                    </li>
-                    <li id="buscador">
-                        <p>Barra de búsqueda:</p>
-                        <input type="text" placeholder="Ej: Tríceps, espalda, etc..."/>
-                    </li>
-                </ul>
-            </ul>
+            
+            <div id="logo">
+                <img src="imagenes/logo_randomgym.png" onclick="location.href='index.html'" title="Ir al inicio" alt="Logo"/>
+            </div>
+
+            <nav>
+                <a href="#">Contacto</a>
+                <a href="ejercicioAleatorio.html">Ejercicio Aleatorio</a>
+                <a href="nutricional.html">Información Nutricional</a>
+            </nav>
+
+            <div id="buscador">
+                <p>Barra de búsqueda:</p>
+                <input type="text" placeholder="Ej: Tríceps, espalda, etc..."/>
+            </div>
+
+            <div id="loggers">
+                <a href="login.html">Iniciar sesión</a>
+                <br/><br/>
+                <a href="signin.html" style="margin-left: 6px">Registrarse</a>
+            </div>
             <hr>
+            
         </header>
-        
+
         <h1>Todo lo que necesitas saber sobre la alimentacion cuando haces ejerecicio</h1>
         <div class="contenedor">
             <figure>

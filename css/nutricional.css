@@ -1,5 +1,5 @@
 html{
-    background-color: rgb(31, 31, 31);
+    background-color: #1f1f1f;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -62,20 +62,20 @@ h1{
     height: 100%;
     font-size: large;
     color: black;
-    background-color: rgba(gray,0.6);
+    background-color: rgba(#808080,0.6);
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
     text-align: center;
 }
 
-.contenedor figure:hover > .capa{    
+.contenedor figure:hover .capa{    
     visibility: visible;
     opacity: 1;
     transform: translate(200px,0px);
     color: white;
 }
 
-.contenedor figure:hover > img{
+.contenedor figure:hover img{
     opacity: 60%;
 }

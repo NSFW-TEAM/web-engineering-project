@@ -6,17 +6,15 @@
         <link rel="shortcut icon" href="imagenes/logo_randomgym.png">
         <link rel="stylesheet" type="text/css" href="css/reset.css"/>
         <link rel="stylesheet" type="text/css" href="css/ejercicioAleatorio.css"/>
-        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+        <link rel="stylesheet" type="text/css" href="scss/menu.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script  src="js/ejercicioAleatorio.js"></script>
     </head>
 
     <body>
         <header>
-            
+            <div></div>            
             <div id="logo">
                 <img src="imagenes/logo_randomgym.png" onclick="location.href='index.html'" title="Ir al inicio" alt="Logo"/>
             </div>
@@ -42,54 +40,19 @@
 
         </header>
 
-        <form onsubmit="Function(); return false;" method="get" enctype="multipart/form-data">
-            <br/>
-            <h1 id="header-preguntas">¿Qué dificultad deseas?</h1>
-            <ul class="selection">
-                <li>
-                    <input type="radio" id="easy" value="easy" name="dificultad" required>
-                    <label for="easy">Principiante</label>
-                </li>
-                <li>
-                    <input type="radio" id="medium" value="medium" name="dificultad">
-                    <label for="medium">Intermedio</label>
-                </li>
-                <li>
-                    <input type="radio" id="hard" value="hard" name="dificultad">
-                    <label for="hard">Avanzado</label>
-                </li>
-                <li>
-                    <input type="radio" id="veryhard" value="veryhard" name="dificultad">
-                    <label for="veryhard">Espartano</label>
-                </li>
-            </ul>
-            <br/>
-            <h1 id="header-preguntas">¿Qué quieres trabajar?</h1>
-            <ul class="selection">
-                <li>
-                    <input type="radio" id="upper" value="upper" name="area" required>
-                    <label for="upper">Tren superior</label>
-                </li>
-                <li>
-                    <input type="radio" id="lower" value="lower" name="area">
-                    <label for="lower">Tren inferior</label>
-                </li>
-                <li>
-                    <input type="radio" id="cardio" value="cardio" name="area">
-                    <label for="cardio">Cardio</label>
-                </li>
-            </ul>
-            <br/>
-            <br/><br/><br/>
-            <ul class="selection">
-                <li>
-                    <input type="submit" id="genexe" value="">
-                    <label for="genexe">¡Dame mi ejercicio!</label>
-                </li>
-            </ul>
+        <form>
+            <br>
+            <div>
+                <h1 id="titulos">Escoge una dificultad:</h1>
+                <input type="radio" id="dif1" value="principiante" name="dificultad" hidden>
+                <input type="radio" id="dif2" value="intermedio" name="dificultad" hidden>
+                <input type="radio" id="dif3" value="avanzado" name="dificultad" hidden>
+                <input type="radio" id="dif4" value="espartano" name="dificultad" hidden>
+            </div>
+            <br>
+
         </form>
         <br>
-        <div class="result"></div>
         <h1 id="titulos"><center>Este es tu ejercicio:</center></h1>
         <div class="contenedor">
             <figure>

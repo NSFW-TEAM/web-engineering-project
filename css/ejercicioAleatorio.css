@@ -1,201 +1,134 @@
-body {
-  background-color: white;
-  font-family: "Bebas Neue", cursive;
+html{
+    background-color: rgb(31, 31, 31);
+    font-family: 'Bebas Neue', cursive;
 }
 
-#header-preguntas {
-  text-align: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+hr{
+    border-color: red;
+    height: 10px;
+    background-color: red;
 }
 
-.selection {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+form{
+    color: rgb(196, 196, 196);
+    font-size: 50px;
+    text-align: center;
 }
 
-.selection li {
-  margin: 0 10px 0 0;
-  width: 10%;
-  height: 40px;
-  position: relative;
+#random{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+    background-color: black;
 }
 
-.selection label, .selection input {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    height: 100%;
 }
 
-.selection input[type="radio"] {
-  opacity: 1;
-  z-index: 100;
-  left: 50%;
+.contenedor figure{
+    background-color: rgba(199, 199, 199, 0.084);
+    position: relative;
+    height: 700px;
+    width: 1800px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.selection input[type="radio"]:checked + label {
-  background-color: red;
-  color: white;
+.contenedor figure img{
+    margin-top: 6%;
+    margin-left: 25%;
+    width: 400px;
+    height: 400px;
+    transition: all 500ms ease-out;
+}
+.contenedor figure .capa{
+    position: absolute;
+    top:10%;
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    color: black;
+    background-color: rgba(gray,0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
 }
 
-.selection label {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  padding: 5px;
-  border: 2px solid black;
-  cursor: pointer;
-  text-align: center;
-  z-index: 90;
+.contenedor figure:hover > .capa{    
+    visibility: visible;
+    opacity: 1;
+    transform: translate(200px,0px);
+    color: white;
+    background-color: rgba(rgb(0, 0, 0),0.9);
 }
 
-.selection label:hover {
-  background: lightgrey;
+.contenedor figure:hover > img{
+    opacity: 60%;
 }
 
-#random {
-  width: 50%;
-  height: 50%;
-  text-align: center;
-  margin: auto;
-  background-color: black;
+#titulos{
+    text-decoration:underline;
+    font-size: 25px;
+    color: #a5a0a0;
+    
 }
 
-.contenedor {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 2%;
-  height: 100%;
+
+.boton{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    width:180px;
+    height:30px;
+    background: #ee0000d2;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    border:none;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
 }
 
-.contenedor figure {
-  background-color: rgba(199, 199, 199, 0.084);
-  position: relative;
-  height: 700px;
-  width: 1800px;
-  overflow: hidden;
-  cursor: pointer;
+.boton::after{
+    content:"";
+    width: 100%;
+    height: 200px;
+    background-color: #c52525;
+    position: absolute;
+    z-index: 1;
+    top: -300px;
+    left: 0;
+    border-radius:0px 0px 0px 0px;
+    transition: .5s ease-in-out all;
 }
 
-.contenedor figure img {
-  margin-top: 6%;
-  margin-left: 25%;
-  width: 400px;
-  height: 400px;
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
+.boton:hover::after{
+    top:0;
 }
 
-.contenedor figure .capa {
-  position: absolute;
-  top: 10%;
-  width: 100%;
-  height: 100%;
-  font-size: large;
-  color: black;
-  background-color: rgba(128, 128, 128, 0.6);
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
-  opacity: 0;
-  visibility: hidden;
-  text-align: center;
+.boton span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
 }
 
-.contenedor figure:hover > .capa {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translate(200px, 0px);
-          transform: translate(200px, 0px);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.9);
+.boton:active{
+    background: #8b0000;
 }
-
-.contenedor figure:hover > img {
-  opacity: 60%;
+.boton:visited{
+    background: #8b0000;
 }
-
-#titulos {
-  text-decoration: underline;
-  font-size: 25px;
-  color: #a5a0a0;
-}
-
-.boton {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 180px;
-  height: 30px;
-  background: #ee0000d2;
-  color: black;
-  text-transform: uppercase;
-  font-family: 'Bebas Neue', cursive;
-  font-weight: bold;
-  font-size: 20px;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-  border-radius: 15px;
-  position: relative;
-  overflow: hidden;
-}
-
-.boton::after {
-  content: "";
-  width: 100%;
-  height: 200px;
-  background-color: #c52525;
-  position: absolute;
-  z-index: 1;
-  top: -300px;
-  left: 0;
-  border-radius: 0px 0px 0px 0px;
-  -webkit-transition: .5s ease-in-out all;
-  transition: .5s ease-in-out all;
-}
-
-.boton:hover::after {
-  top: 0;
-}
-
-.boton span {
-  position: relative;
-  z-index: 2;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-}
-
-.boton:active {
-  background: #8b0000;
-}
-
-.boton:visited {
-  background: #8b0000;
-}
-/*# sourceMappingURL=ejercicioAleatorio.css.map */
