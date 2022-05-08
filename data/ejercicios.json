@@ -6,7 +6,9 @@
             "name": "Press de banca inclinado con mancuernas",
             "id": "00",
             "demopath": "./imagenes/ejercicios/00.gif",
-            "desc": "Levantas mancuernas en una banca xd"
+            "desc": "Levantas mancuernas en una banca pero inclinado",
+            "duration": "3 series de 12 repeticiones",
+            "workarea": "Pecho, tríceps y hombros"
         },
         {
             "diff": "easy",
@@ -14,7 +16,9 @@
             "name": "Levantamiento de pantorrillas con peso",
             "id": "01",
             "demopath": "imagenes/ejercicios/01.gif",
-            "desc": "Levantas las pantorrillas xd"
+            "desc": "Levantas las pantorrillas pero con peso",
+            "duration": "3 series de 15 repeticiones",
+            "workarea": "Gemelos"
         },
         {
             "diff": "easy",
@@ -22,7 +26,9 @@
             "name": "Saltos de tijera",
             "id": "02",
             "demopath": "imagenes/ejercicios/02.gif",
-            "desc": "Saltas como tijera xd"
+            "desc": "Saltas pero como tijera",
+            "duration": "30 segundos",
+            "workarea": "Cuerpo completo, mayoritariamente piernas"
         },
         {
             "diff": "medium",
@@ -30,7 +36,9 @@
             "name": "Fondos",
             "id": "03",
             "demopath": "imagenes/ejercicios/03.gif",
-            "desc": "Te afirmas en dos apoyos y bajas hasta el fondo"
+            "desc": "Te afirmas pero en dos apoyos y bajas hasta el fondo",
+            "duration": "3 series de 12 repeticiones",
+            "workarea": "Pecho, tríceps y hombros"
         },
         {
             "diff": "medium",
@@ -38,7 +46,9 @@
             "name": "Press de piernas con máquina",
             "id": "04",
             "demopath": "imagenes/ejercicios/04.gif",
-            "desc": "Empujas el peso hacia adelante y hacia atrás"
+            "desc": "Empujas el peso pero hacia adelante y hacia atrás",
+            "duration": "3 series de 12 repeticiones",
+            "workarea": "Cuádriceps y glúteos"
         },
         {
             "diff": "medium",
@@ -46,7 +56,9 @@
             "name": "Correr en sitio",
             "id": "05",
             "demopath": "imagenes/ejercicios/05.gif",
-            "desc": "Corres en el sitio xd"
+            "desc": "Corres pero en el sitio",
+            "duration": "30 segundos",
+            "workarea": "Cuerpo completo, mayoritariamente piernas"
         },
         {
             "diff": "hard",
@@ -54,7 +66,9 @@
             "name": "Peso muerto",
             "id": "06",
             "demopath": "imagenes/ejercicios/06.gif",
-            "desc": "Levantas peso muerto xd (Cuidado con la espalda)"
+            "desc": "Levantas un peso pero que está muerto (Cuidado con la espalda)",
+            "duration": "Hasta llegar al fallo",
+            "workarea": "Brazos, espalda alta y baja"
         },
         {
             "diff": "hard",
@@ -62,7 +76,9 @@
             "name": "Sentadillas con barra",
             "id": "07",
             "demopath": "imagenes/ejercicios/07.gif",
-            "desc": "Haces sentadillas cargando una barra en la espalda/hombros"
+            "desc": "Haces sentadillas pero cargando una barra en la espalda/hombros",
+            "duration": "3 series de 12 repeticiones",
+            "workarea": "Cuádriceps y glúteos"
         },
         {
             "diff": "hard",
@@ -70,7 +86,9 @@
             "name": "Sentadillas explosivas",
             "id": "08",
             "demopath": "imagenes/ejercicios/08.gif",
-            "desc": "Sentadillas pero inorporando un salto a todo dar"
+            "desc": "Sentadillas pero incorporando un salto de alto impacto",
+            "duration": "3 series de 15 repeticiones",
+            "workarea": "Cuerpo completo, mayoritariamente piernas"
         },
         {
             "diff": "veryhard",
@@ -78,7 +96,9 @@
             "name": "Flexiones en paralelas",
             "id": "09",
             "demopath": "imagenes/ejercicios/09.gif",
-            "desc": "Flexiones pero afirmado en las paralelas incorporando calistenia"
+            "desc": "Flexiones pero afirmado en las paralelas incorporando calistenia",
+            "duration": "3 series de 10 repeticiones",
+            "workarea": "Brazos y abdominales"
         },
         {
             "diff": "veryhard",
@@ -86,7 +106,9 @@
             "name": "Rompimiento de sandía",
             "id": "10",
             "demopath": "imagenes/ejercicios/10.gif",
-            "desc": "Rompes una sandía con los muslos"
+            "desc": "Rompes una sandía pero con los muslos",
+            "duration": "3 series de 5 sandías",
+            "workarea": "Cuádriceps"
         },
         {
             "diff": "veryhard",
@@ -94,7 +116,9 @@
             "name": "Burpees con flexión",
             "id": "11",
             "demopath": "imagenes/ejercicios/11.gif",
-            "desc": "Burpees pero con flexión"
+            "desc": "Burpees pero con flexión",
+            "duration": "3 series de 20 repeticiones",
+            "workarea": "Cuerpo completo"
         }
     ]
 } 

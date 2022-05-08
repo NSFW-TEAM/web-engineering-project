@@ -1,14 +1,24 @@
 body {
-  background-color: white;
+  background-image: url("../imagenes/rockbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Bebas Neue", cursive;
 }
 
-#header-preguntas {
+#titulo {
   text-align: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  color: white;
+  font-size: 4.2em;
+  -webkit-text-stroke: 1.7px black;
+}
+
+.pregunta {
+  margin-bottom: 0.5%;
+  text-align: center;
+  color: white;
+  font-size: 2.4em;
+  -webkit-text-stroke: black 1px;
 }
 
 .selection {
@@ -22,14 +32,13 @@ body {
 }
 
 .selection li {
-  margin: 0 10px 0 0;
-  width: 10%;
-  height: 40px;
   position: relative;
+  margin-right: 1%;
+  width: 17%;
+  height: 70px;
 }
 
 .selection label, .selection input {
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -38,45 +47,50 @@ body {
 }
 
 .selection input[type="radio"] {
-  opacity: 1;
-  z-index: 100;
+  opacity: 0.01;
+  z-index: 1;
   left: 50%;
+  top: 50%;
+}
+
+.selection #genexe {
+  opacity: 0.01;
 }
 
 .selection input[type="radio"]:checked + label {
   background-color: red;
   color: white;
+  border-color: darkred;
 }
 
 .selection label {
+  background-color: #282828;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  padding: 5px;
-  border: 2px solid black;
+  padding: 7%;
+  margin-left: 2%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 50px;
   cursor: pointer;
   text-align: center;
-  z-index: 90;
+  z-index: 2;
+  font-family: "Anybody", cursive;
+  font-size: 1.5em;
+  color: white;
 }
 
 .selection label:hover {
-  background: lightgrey;
-}
-
-#random {
-  width: 50%;
-  height: 50%;
-  text-align: center;
-  margin: auto;
-  background-color: black;
+  background: grey;
+  color: black;
+  border-color: black;
 }
 
 .contenedor {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -84,118 +98,80 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 2%;
-  height: 100%;
-}
-
-.contenedor figure {
-  background-color: rgba(199, 199, 199, 0.084);
-  position: relative;
-  height: 700px;
-  width: 1800px;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.contenedor figure img {
-  margin-top: 6%;
-  margin-left: 25%;
-  width: 400px;
-  height: 400px;
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
-}
-
-.contenedor figure .capa {
-  position: absolute;
-  top: 10%;
-  width: 100%;
-  height: 100%;
-  font-size: large;
-  color: black;
-  background-color: rgba(128, 128, 128, 0.6);
-  -webkit-transition: all 500ms ease-out;
-  transition: all 500ms ease-out;
-  opacity: 0;
-  visibility: hidden;
   text-align: center;
 }
 
-.contenedor figure:hover > .capa {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translate(200px, 0px);
-          transform: translate(200px, 0px);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.9);
+.contenedor img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  border: 10px double grey;
 }
 
-.contenedor figure:hover > img {
-  opacity: 60%;
-}
-
-#titulos {
-  text-decoration: underline;
-  font-size: 25px;
-  color: #a5a0a0;
-}
-
-.boton {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.contenedor ul {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 180px;
-  height: 30px;
-  background: #ee0000d2;
-  color: black;
-  text-transform: uppercase;
-  font-family: 'Bebas Neue', cursive;
-  font-weight: bold;
-  font-size: 20px;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-  border-radius: 15px;
-  position: relative;
-  overflow: hidden;
-}
-
-.boton::after {
-  content: "";
   width: 100%;
+}
+
+.contenedor ul li {
+  background-image: url("../imagenes/redpattern.jpg");
+  background-color: transparent;
+  border-width: 5px;
+  border-style: groove;
+  border-color: #550000;
+  border-radius: 60px;
+  width: 28%;
   height: 200px;
-  background-color: #c52525;
-  position: absolute;
-  z-index: 1;
-  top: -300px;
-  left: 0;
-  border-radius: 0px 0px 0px 0px;
-  -webkit-transition: .5s ease-in-out all;
-  transition: .5s ease-in-out all;
+  resize: none;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
-.boton:hover::after {
-  top: 0;
+.contenedor ul li hr {
+  margin: 0;
+  height: 0;
+  border-top-color: #550000;
+  border-top-style: ridge;
+  border-width: 0;
+  border-top-width: 5px;
 }
 
-.boton span {
-  position: relative;
-  z-index: 2;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+#nameexe {
+  margin-top: 1%;
+  text-align: center;
+  color: white;
+  font-size: 3.7em;
 }
 
-.boton:active {
-  background: #8b0000;
+.exeinfo {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+  color: white;
+  font-size: 2.4em;
 }
 
-.boton:visited {
-  background: #8b0000;
+.explicacion, .duracion, .workarea {
+  font-family: "Anybody", cursive;
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
+  padding-top: 5%;
+}
+
+footer {
+  font-family: "Anybody", cursive;
+  font-size: 1em;
+  padding-bottom: 10px;
+  color: white;
 }
 /*# sourceMappingURL=ejercicioAleatorio.css.map */

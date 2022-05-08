@@ -2,7 +2,7 @@
 <html lang="es"> <!--lang indica idioma a escribir-->
     <head> <!---->
         <meta charset="utf-8"/> <!---charset indica configuracion de la codificacion-->
-        <title>Random Gym</title> <!--nombre de la pagina-->
+        <title>Ejercicio Aleatorio - Random Gym</title> <!--nombre de la pagina-->
         <link rel="shortcut icon" href="imagenes/logo_randomgym.png">
         <link rel="stylesheet" type="text/css" href="css/reset.css"/>
         <link rel="stylesheet" type="text/css" href="css/ejercicioAleatorio.css"/>
@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script  src="js/ejercicioAleatorio.js"></script>
+        <script src="js/ejercicioAleatorio.js" defer></script>
     </head>
 
     <body>
@@ -41,10 +41,12 @@
             <hr>
 
         </header>
-
-        <form onsubmit="Function(); return false;" method="get" enctype="multipart/form-data">
+        <br/><br/>
+        <h1 id="titulo">GENERADOR DE EJERCICIOS ALEATORIOS RANDOM GYM®</h1>
+        <br/><br/>
+        <form onsubmit="GenerateExercise(); return false;" enctype="multipart/form-data">
             <br/>
-            <h1 id="header-preguntas">¿Qué dificultad deseas?</h1>
+            <h1 class="pregunta">¿Qué dificultad deseas?</h1>
             <ul class="selection">
                 <li>
                     <input type="radio" id="easy" value="easy" name="dificultad" required>
@@ -63,8 +65,8 @@
                     <label for="veryhard">Espartano</label>
                 </li>
             </ul>
-            <br/>
-            <h1 id="header-preguntas">¿Qué quieres trabajar?</h1>
+            <br/><br/><br/><br/>
+            <h1 class="pregunta">¿Qué quieres trabajar?</h1>
             <ul class="selection">
                 <li>
                     <input type="radio" id="upper" value="upper" name="area" required>
@@ -80,7 +82,7 @@
                 </li>
             </ul>
             <br/>
-            <br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/><br/>
             <ul class="selection">
                 <li>
                     <input type="submit" id="genexe" value="">
@@ -88,55 +90,32 @@
                 </li>
             </ul>
         </form>
-        <br>
-        <div class="result"></div>
-        <h1 id="titulos"><center>Este es tu ejercicio:</center></h1>
-        <div class="contenedor">
-            <figure>
-                <img src="https://pa1.narvii.com/6360/8ece8369739932d6925a85993c768c48bda21a27_hq.gif">
-                <div class="capa">
-                    <h3 id="titulos">Explicación:</h3>
-                    <br>
-                    <p>
-                        Lorem ipsum dolor sit amet<br>
-                        consectetur adipisicing elit. Labore saepe ab, <br>
-                        quasi praesentium atque <br>
-                        exercitationem placeat, voluptas<br> 
-                        aspernatur ipsam voluptatibus <br>
-                        illo magnam earum possimus <br>
-                        beatae dolor tenetur <br>
-                        fugit voluptatum similique!<br>
-                    </p> 
-                    <br>
-                    <h3 id="titulos">Duración:</h3>
-                    <br>
-                    <p>
-                        Lorem ipsum dolor sit amet<br>
-                        consectetur adipisicing elit. Labore saepe ab, <br>
-                        quasi praesentium atque <br>
-                        exercitationem placeat, voluptas<br> 
-                        aspernatur ipsam voluptatibus <br>
-                        illo magnam earum possimus <br>
-                        beatae dolor tenetur <br>
-                        fugit voluptatum similique!<br>
-                    </p>
-                    <br>
-                    <h3 id="titulos">Zona trabajada:</h3>
-                    <br>
-                    <p>
-                        Lorem ipsum dolor sit amet<br>
-                        consectetur adipisicing elit. Labore saepe ab, <br>
-                        quasi praesentium atque <br>
-                        exercitationem placeat, voluptas<br> 
-                        aspernatur ipsam voluptatibus <br>
-                        illo magnam earum possimus <br>
-                        beatae dolor tenetur <br>
-                        fugit voluptatum similique!<br>
-                    </p>
-                    <br>
-                </div>
-            </figure>
+        <br/><br/>
+        <div class="contenedor" hidden>
+            <br/>
+            <br/><br/>
+            <h1 class="pregunta">Este es tu ejercicio:</h1>
+            <img class="imgexe" src="imagenes/ejercicios/placeholder.gif">
+            <h1 id="nameexe">PLACEHOLDER NAME</h1>
+            <ul>
+                <li>
+                    <p class="exeinfo">Explicación</p>
+                    <hr/>
+                    <p class="explicacion">este es el placeholder de la explicación</p>
+                </li>
+                <li>
+                    <p class="exeinfo">Duración</p>
+                    <hr/>
+                    <p class="duracion">este es el placeholder de la duración</p>
+                </li>
+                <li>
+                    <p class="exeinfo">Zona Trabajada</p>
+                    <hr/>
+                    <p class="workarea">este es el placeholder de la zona trabajada</p>
+                </li>
+            </ul>
         </div>
+        <br/>
         <footer><center>Random Gym brought to you by NSFW Corporation Inc. All Rights Reserved 2022</center></footer>
     </body>
 

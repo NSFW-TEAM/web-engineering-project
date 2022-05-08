@@ -1,5 +1,4 @@
-//no se que pasa weon arreglar
-function Funcion() {
+function Function() {
 
     const formData = new FormData(document.querySelector('form'));
     var selections =[];
@@ -13,10 +12,14 @@ function Funcion() {
         $.each(data.ejercicio,function(i, exe){
             if(selections[0] == exe.diff && selections[1] == exe.area){
                 console.log(selections[0]+" + "+selections[1]+" = "+exe.name);
-                $(".result").empty();
-                $(".result").append("<p>"+exe.name+"</p>");
-                $(".result").append("<img src=\""+exe.demopath+"\">")
+                $(".contenedor").attr("hidden",false);
+                $(".imgexe").attr("src",exe.demopath);
+                $("#nameexe").html(exe.name);
+                $(".explicacion").html(exe.desc);
+                $(".duracion").html(exe.duration);
+                $(".workarea").html(exe.workarea);
+                document.getElementById("nameexe").scrollIntoView({behavior: 'smooth'});
             }
         });
     });
-}
+};
