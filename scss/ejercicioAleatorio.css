@@ -1,0 +1,177 @@
+body {
+  background-image: url("../imagenes/rockbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Bebas Neue", cursive;
+}
+
+#titulo {
+  text-align: center;
+  color: white;
+  font-size: 4.2em;
+  -webkit-text-stroke: 1.7px black;
+}
+
+.pregunta {
+  margin-bottom: 0.5%;
+  text-align: center;
+  color: white;
+  font-size: 2.4em;
+  -webkit-text-stroke: black 1px;
+}
+
+.selection {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.selection li {
+  position: relative;
+  margin-right: 1%;
+  width: 17%;
+  height: 70px;
+}
+
+.selection label, .selection input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.selection input[type="radio"] {
+  opacity: 0.01;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+}
+
+.selection #genexe {
+  opacity: 0.01;
+}
+
+.selection input[type="radio"]:checked + label {
+  background-color: red;
+  color: white;
+  border-color: darkred;
+}
+
+.selection label {
+  background-color: #282828;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 7%;
+  margin-left: 2%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 2;
+  font-family: "Anybody", cursive;
+  font-size: 1.5em;
+  color: white;
+}
+
+.selection label:hover {
+  background: grey;
+  color: black;
+  border-color: black;
+}
+
+.contenedor {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.contenedor img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  border: 10px double grey;
+}
+
+.contenedor ul {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.contenedor ul li {
+  background-image: url("../imagenes/redpattern.jpg");
+  background-color: transparent;
+  border-width: 5px;
+  border-style: groove;
+  border-color: #550000;
+  border-radius: 60px;
+  width: 28%;
+  height: 200px;
+  resize: none;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.contenedor ul li hr {
+  margin: 0;
+  height: 0;
+  border-top-color: #550000;
+  border-top-style: ridge;
+  border-width: 0;
+  border-top-width: 5px;
+}
+
+#nameexe {
+  margin-top: 1%;
+  text-align: center;
+  color: white;
+  font-size: 3.7em;
+}
+
+.exeinfo {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+  color: white;
+  font-size: 2.4em;
+}
+
+.explicacion, .duracion, .workarea {
+  font-family: "Anybody", cursive;
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
+  padding-top: 5%;
+}
+
+footer {
+  font-family: "Anybody", cursive;
+  font-size: 1em;
+  padding-bottom: 10px;
+  color: white;
+}
+/*# sourceMappingURL=ejercicioAleatorio.css.map */

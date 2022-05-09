@@ -1,118 +1,126 @@
-<!DOCTYPE html><!--indica tipo de pagina en este caso html 5--> <!--para validar html buscar validator html-->
-<html lang="es"> <!--lang indica idioma a escribir-->
-    <head> <!---->
-        
-        <meta charset="utf-8"/> <!---charset indica configuracion de la codificacion-->
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
         <title>Random Gym</title> <!--nombre de la pagina-->
-        <link rel="shortcut icon" href="imagenes/logo_randomgym.png">
-        <link rel="shortcut icon" href="imagenes/logo_randomgym.png">
+        <!--<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">-->
         <link rel="stylesheet" type="text/css" href="css/reset.css"/>
-        <link rel="stylesheet" type="text/css" href="css/menu.css"/>
-        <link rel="stylesheet" type="text/css" href="css/profile.css"/>
+        <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="shortcut icon" type="image/png" href="imagenes/logo_randomgym.png"/>
+        <link rel="stylesheet" type="text/css" href="scss/menu2.css"/>
+        <link rel="stylesheet" type="text/css" href="scss/profile.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> <!--texto grande (daddy day)-->
+        <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,600&display=swap" rel="stylesheet"> <!--texto mediano (anybody)-->
+
     </head>
 
     <body>
         <header>
-            <ul id="barrasuperior">
-                <span class="logo">
-                    <img src="imagenes/logo_randomgym.png" onclick="location.href='index.html'" height="140px" title="Ir al inicio" alt="Logo"/>
-                </span>
-                <ul id="menu">
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="ejercicioAleatorio.html">Ejercicio Aleatorio</a></li>
-                    <li><a href="nutricional.html">Información Nutricional</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <ul id="loggers">
-                            <li><a href="profile.html">Username</a></li>
-                        </ul>
-                    </li>
-                    <li id="buscador">
-                        <p>Barra de búsqueda:</p>
-                        <input type="text" placeholder="Ej: Tríceps, espalda, etc..."/>
-                    </li>
-                </ul>
-            </ul>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <div id="logo">
+                        <img src="imagenes/logo_randomgym.png" onclick="location.href='index.html'" title="Ir al inicio" alt="Logo"/>
+                    </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 btn-lg" >
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          <button class="btn btn-danger me-lg-2 btn-lg" type="button" >Contacto</button>
+                        </a>
+                      </li>
+                      <li class="nav-item"  >
+                        <a class="nav-link" href="ejercicioAleatorio.html">
+                          <button class="btn btn-danger me-lg-2 btn-lg" type="button" >Ejercicio aleatorio</button>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="nutricional.html">
+                          <button class="btn btn-danger me-lg-2 btn-lg" type="button" >Información nutricional</button>
+                        </a>
+                      </li>
+                    </ul>
+                    <form class="d-flex ">
+                      <input class="form-control me-2" type="search" placeholder="Ej: Tríceps, espalda, etc..." aria-label="Ej: Tríceps, espalda, etc...">
+                      <button class="btn btn-outline-danger" type="submit">Search</button>
+                    </form>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                          <a class="nav-link" href="login.html">
+                            <button class="btn btn-danger me-lg-2 " type="button" >Iniciar sesión</button>
+                          </a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="nav-link" href="signin.html">
+                            <button class="btn btn-danger me-lg-2" type="button" >Registrarse</button>
+                          </a>
+                        </li>
+                    </ul>
+                  </div>
+                  
+                  
+                </div>
+              </nav> 
             <hr>
+
         </header>
-
-        <!-- informacion de usuario --> 
-        <div id="info_user">
-            <span class="material-icons" id="user"> account_circle </span>
-            <p>Username</p>
-            <p>Email</p>
-            <p>Peso</p>
-            
+        
+        <div class="bg-dark">
+            <div class="container align-content-center">
+                <div class="profile-box align-items-center">
+                    <img src="imagenes/cjcorriendo.png" class="profile-pic" alt="">
+                    <h1 id="informacion">Nombre de usuario</h1>
+                    <h2 id="informacion">Email</h2>
+                    <h2 id="informacion">Peso(kg)</h2>
+                    <h2 id="informacion">Objetivo: -</h2>
+                </div>
+            </div>
         </div>
 
-        <br>
-        <br>
-        <!--ESPACIO PARA RUTINAS REALIZADAS-->
-        <div id="rutinas">
-            <p>Rutinas realizadas:
-                <select name="rutinas realizadas" >
-                    <option value="1">Select</option>
-                    <option value="2">Select</option>
-                    <option value="3">Select</option>
-                </select>
-            </p>
+        <section id="galeria" class="container ">
+            <div class="text-center pt-5">
+                <h1>Últimas rutinas realizadas</h1>
+                <p>Aquí se almacenarán todas las rutinas que realices, utiliza los filtros para hallar la que buscas con mayor facilidad</p>
+            </div>
 
-            <ul>
-                <li><img src="imagenes/rutina.png" width="180px"></li>
-                <li><img src="imagenes/rutina.png" width="180px"></li>
-                <li><img src="imagenes/rutina.png" width="180px"></li>
-                <li><img src="imagenes/rutina.png" width="180px"></li>
-                <li><img src="imagenes/rutina.png" width="180px"></li>
-                <li><img src="imagenes/rutina.png" width="180px"></li>
-            </ul>
-        </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Orden
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Más recientes primero</a></li>
+                  <li><a class="dropdown-item" href="#">Más antiguas primero</a></li>
+                </ul>
+            </div>
 
-        <br>
-        <br>
-        <!--ESPACIO PARA DIETAS REALIZADAS-->
+            <div class="row ">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="imagenes/cjmancuernas.png">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="imagenes/cjhaciendopesas.png">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="imagenes/cjcorriendo.png">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="imagenes/cjhaciendopesas.png">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="imagenes/cjcorriendo.png">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="imagenes/cjmancuernas.png">
+              </div>
+            </div>
+        </section>
 
-        <div id="dietas">
-            <p>Dietas realizadas:
-                <select name="Dietas realizadas">
-                    <option value="1">Select</option>
-                    <option value="2">Select</option>
-                    <option value="3">Select</option>
-                </select>
-            </p>
-
-            <ul>
-                <li><img src="imagenes/rutina.png" width="180px"></li>
-                <li><img src="imagenes/rutina.png" width="180px"></li>
-                <li><img src="imagenes/rutina.png" width="180px"></li>
-                <li><img src="imagenes/rutina.png" width="180px"></li>
-                <li><img src="imagenes/rutina.png" width="180px"></li>
-                <li><img src="imagenes/rutina.png" width="180px"></li>
-            </ul>
-        </div>
-        <br>
-
-        <div id="linea_temporal">
-            <p>Linea Temporal:
-                <select name="Linea temporal">
-                    <option value="1">Select</option>
-                    <option value="2">Select</option>
-                    <option value="3">Select</option>
-                </select>
-            </p>
-
-            <img src="imagenes/grafico-de-linea-simple.png" width="400px">0
-
-        </div>
-        <br>
-
-
-
-        <footer><center>Random Gym brought to you by NSFW Corporation Inc. All Rights Reserved 2022</center></footer>
+        <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     </body>
 
 </html>
