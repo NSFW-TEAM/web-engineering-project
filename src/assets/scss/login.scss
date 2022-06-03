@@ -1,0 +1,43 @@
+@import "variables";
+@import "botones";
+
+body{
+    background-color: $bgcolorpage;
+    font-family: $bigfont;
+}
+
+hr{
+    border-color: $colorRojo;
+    height: 10px;
+    background-color: $colorRojo;
+}
+
+.contenedor{
+    background: {
+        image: url('../imagenes/mazado.jpg');
+        position: center;
+        size: 10vh;
+        repeat: no-repeat;
+
+    }
+}
+
+#login{
+    font-family: $bigfont;
+    color: $colorBlancoPastel;
+}
+
+
+#titulos{
+    font-family: $bigfont;
+    color: $colorRojo;
+    font-style: oblique;
+}
+
+
+footer{
+    background-color: $colorNegro;
+    color: $colorBlancoPastel;
+    font-family: $bigfont;
+}
+

@@ -1,0 +1,77 @@
+<section>
+<br/><br/>
+        <h1 id="titulo">GENERADOR DE EJERCICIOS ALEATORIOS RANDOM GYM®</h1>
+        <br/><br/>
+        <form onsubmit="GenerateExercise(); return false;" enctype="multipart/form-data">
+            <br/>
+            <h1 class="pregunta">¿Qué dificultad deseas?</h1>
+            <ul class="selection">
+                <li>
+                    <input type="radio" id="easy" value="easy" name="dificultad" required>
+                    <label for="easy">Principiante</label>
+                </li>
+                <li>
+                    <input type="radio" id="medium" value="medium" name="dificultad">
+                    <label for="medium">Intermedio</label>
+                </li>
+                <li>
+                    <input type="radio" id="hard" value="hard" name="dificultad">
+                    <label for="hard">Avanzado</label>
+                </li>
+                <li>
+                    <input type="radio" id="veryhard" value="veryhard" name="dificultad">
+                    <label for="veryhard">Espartano</label>
+                </li>
+            </ul>
+            <br/><br/><br/><br/>
+            <h1 class="pregunta">¿Qué quieres trabajar?</h1>
+            <ul class="selection">
+                <li>
+                    <input type="radio" id="upper" value="upper" name="area" required>
+                    <label for="upper">Tren superior</label>
+                </li>
+                <li>
+                    <input type="radio" id="lower" value="lower" name="area">
+                    <label for="lower">Tren inferior</label>
+                </li>
+                <li>
+                    <input type="radio" id="cardio" value="cardio" name="area">
+                    <label for="cardio">Cardio</label>
+                </li>
+            </ul>
+            <br/>
+            <br/><br/><br/><br/><br/><br/><br/>
+            <ul class="selection">
+                <li>
+                    <input type="submit" id="genexe" value="">
+                    <label for="genexe">¡Dame mi ejercicio!</label>
+                </li>
+            </ul>
+        </form>
+        <br/><br/>
+        <div class="contenedor" hidden>
+            <br/>
+            <br/><br/>
+            <h1 class="pregunta">Este es tu ejercicio:</h1>
+            <img class="imgexe" src="/assets/imagenes/ejercicios/placeholder.gif">
+            <h1 id="nameexe">PLACEHOLDER NAME</h1>
+            <ul>
+                <li>
+                    <p class="exeinfo">Explicación</p>
+                    <hr/>
+                    <p class="explicacion">este es el placeholder de la explicación</p>
+                </li>
+                <li>
+                    <p class="exeinfo">Duración</p>
+                    <hr/>
+                    <p class="duracion">este es el placeholder de la duración</p>
+                </li>
+                <li>
+                    <p class="exeinfo">Zona Trabajada</p>
+                    <hr/>
+                    <p class="workarea">este es el placeholder de la zona trabajada</p>
+                </li>
+            </ul>
+        </div>
+        <br/>
+    </section>
