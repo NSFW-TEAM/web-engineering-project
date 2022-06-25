@@ -1,8 +1,14 @@
 @import "variables";
 @import "botones";
 
-body{
-    background-color: $bgcolorpage;
+section{
+    background: {
+        color: transparent;
+        image: url('../imagenes/mazado.jpg');
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    }
     font-family: $bigfont;
 }
 
@@ -12,21 +18,17 @@ hr{
     background-color: $colorRojo;
 }
 
-.contenedor{
-    background: {
-        image: url('../imagenes/mazado.jpg');
-        position: center;
-        size: 10vh;
-        repeat: no-repeat;
-
-    }
-}
-
 #signin{
     font-family: $bigfont;
     color: $colorBlancoPastel;
 }
 
+.form-control{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
 
 #titulos{
     font-family: $bigfont;

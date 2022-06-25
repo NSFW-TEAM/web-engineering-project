@@ -1,4 +1,7 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,600&display=swap");
+section {
+  background-color: transparent;
   background-image: url("../imagenes/rockbg.jpg");
   background-position: center;
   background-size: cover;
@@ -23,9 +26,9 @@ body {
 
 .selection {
   text-align: center;
-  background-color: #282828;
+  background-color: #141414;
   list-style-type: none;
-  border: 10px ridge #282828;
+  border: 10px ridge #141414;
   width: 20%;
   margin-left: auto;
   margin-right: auto;
@@ -97,7 +100,7 @@ body {
 }
 
 #imgimc {
-  border: 10px ridge #282828;
+  border: 10px ridge #141414;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -106,9 +109,9 @@ body {
 .resultado {
   color: white;
   text-align: center;
-  background-color: #282828;
+  background-color: #141414;
   list-style-type: none;
-  border: 10px ridge #282828;
+  border: 10px ridge #141414;
   width: 40%;
   margin-left: auto;
   margin-right: auto;
@@ -208,7 +211,6 @@ body {
 
 .dietas li p {
   text-align: center;
-  padding-top: 2%;
   line-height: 1.5em;
   width: 95%;
   margin-left: auto;

@@ -1,1 +1,66 @@
-<p>nutinfo works!</p>
+<section>
+<br/>
+        
+        <h1 id="titulo">UN GRAN ENTRENAMIENTO REQUIERE UNA GRAN ALIMENTACIÓN</h1>
+
+        <form [formGroup]="formNutInfo" (submit)="CalcImc()">
+            <h1 class="pregunta">Para hallar tu dieta ideal, debemos calcular tu IMC (Índice de Masa Corporal)</h1>
+            <br/>
+            <ul class="selection">
+                <li>
+                    <label for="peso">Peso (kg)</label>
+                    <input type="number" id="peso" value="" formControlName="peso" required>
+                </li>
+                <li>
+                    <label for="altura">Altura (cm)</label>
+                    <input type="number" id="altura" value="" formControlName="altura" required>
+                </li>
+                <input type="submit" id="calcimc" value="Calcular IMC" name="calcimc">
+                <label for="calcimc">Calcular IMC</label>
+            </ul>
+            <br/><br/><br/><br/>
+        </form>
+
+        <div class="resultado">
+            <p class="textresultado">el imc indica el estado de salud física de una persona</p>
+            <div id="quedebobutton" hidden>
+                <input type="button" id="quedebo" value="¿Qué debo hacer?" name="quedebo" (click)="ScrollToDiet()">
+                <label for="quedebo">¿Qué debo hacer?</label>
+            </div>
+        </div>
+
+        <div>
+            <img id="imgimc" src="/assets/imagenes/imc.jpg" width="60%">
+        </div>
+
+        <ul class="dietas">
+            <li>
+                <div id="bal">  
+                    <img src="/assets/imagenes/balance.gif" height="50px">
+                    <h1>Balance calórico</h1>
+                    <img src="/assets/imagenes/balance.gif" height="50px">
+                </div>
+                <hr/>
+                <p>También llamado "gasto energético neutro", ocurre cuando un individuo se mantiene gastando las misma cantidad de calorías que consume, manteniendo el peso actual. Si te encuentras en tu peso ideal y quieres mantenerte allí, es recomendable hacer un balance calórico.</p>
+            </li>
+            <li>
+                <div id="def">
+                    <img src="/assets/imagenes/strawberry.gif" height="50px">
+                    <h1>Déficit calórico</h1>
+                    <img src="/assets/imagenes/strawberry.gif" height="50px">
+                </div>
+                <hr/>
+                <p>Ocurre cuando un individuo gasta más calorías de las que consume, perdiendo peso en consecuencia. Esto se logra ingieriendo en su mayoría productos bajos en calorías, comiendo menos cantidad y gastando más calorías mediante actividad física.</p>
+            </li>
+            <li>
+                <div id="sup">
+                    <img src="/assets/imagenes/steak.gif" height="50px">
+                    <h1>Superávit calórico</h1>
+                    <img src="/assets/imagenes/steak.gif" height="50px">
+                </div>
+                <hr/>
+                <p>Ocurre cuando un individuo consume más calorías de las que gasta, ganando peso en consecuencia. Esto se logra ingieriendo mayor cantidad de alimentos, de preferencia altos en proteína, aumentando la cantidad de grasa y músculo en el cuerpo. Es importante realizar trabajos musculares para aprovechar la mayor parte de las calorías consumidas.</p>
+            </li>
+        </ul>
+        <br>
+    </section>

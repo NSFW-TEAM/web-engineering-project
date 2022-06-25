@@ -31,10 +31,12 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/scss/reset.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/libs/bootstrap/js/bootstrap.bundle.min.js"
+              "src/assets/libs/bootstrap/js/bootstrap.bundle.min.js",
+              "node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {

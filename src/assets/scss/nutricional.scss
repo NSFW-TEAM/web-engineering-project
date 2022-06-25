@@ -1,11 +1,9 @@
-$bgcolorpage: rgb(40,40,40);
-$verydarkred: rgb(85,0,0);
-$bigfont: 'Bebas Neue', cursive;
-$smallfont: 'Anybody', cursive;
+@import 'variables';
 
-body{
+section{
     background: {
-        image: url('../imagenes/rockbg.jpg');
+        color: transparent;
+        image: url('/assets/imagenes/rockbg.jpg');
         position: center;
         size: cover;
         repeat: no-repeat;
@@ -171,7 +169,7 @@ body{
 
 .dietas{
     li{
-        background-image: url('../imagenes/rockbg.jpg');
+        background-image: url('/assets/imagenes/rockbg.jpg');
         width: 95%;
         height: 400px;
         margin: {
@@ -217,7 +215,6 @@ body{
         }
         p{
             text-align: center;
-            padding-top: 2%;
             line-height: 1.5em;
             width: 95%;
             margin: {

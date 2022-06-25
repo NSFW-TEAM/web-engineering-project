@@ -1,46 +1,44 @@
 <section>
-<br/><br/>
+<br/>
         <h1 id="titulo">GENERADOR DE EJERCICIOS ALEATORIOS RANDOM GYM®</h1>
-        <br/><br/>
-        <form onsubmit="GenerateExercise(); return false;" enctype="multipart/form-data">
-            <br/>
+        <form [formGroup]="formRandomExe" (submit)="GenerateExercise()">
             <h1 class="pregunta">¿Qué dificultad deseas?</h1>
             <ul class="selection">
                 <li>
-                    <input type="radio" id="easy" value="easy" name="dificultad" required>
+                    <input type="radio" id="easy" value="easy" formControlName="dificultad" required>
                     <label for="easy">Principiante</label>
                 </li>
                 <li>
-                    <input type="radio" id="medium" value="medium" name="dificultad">
+                    <input type="radio" id="medium" value="medium" formControlName="dificultad">
                     <label for="medium">Intermedio</label>
                 </li>
                 <li>
-                    <input type="radio" id="hard" value="hard" name="dificultad">
+                    <input type="radio" id="hard" value="hard" formControlName="dificultad">
                     <label for="hard">Avanzado</label>
                 </li>
                 <li>
-                    <input type="radio" id="veryhard" value="veryhard" name="dificultad">
+                    <input type="radio" id="veryhard" value="veryhard" formControlName="dificultad">
                     <label for="veryhard">Espartano</label>
                 </li>
             </ul>
-            <br/><br/><br/><br/>
+            <br/><br/>
             <h1 class="pregunta">¿Qué quieres trabajar?</h1>
             <ul class="selection">
                 <li>
-                    <input type="radio" id="upper" value="upper" name="area" required>
+                    <input type="radio" id="upper" value="upper" formControlName="area" required>
                     <label for="upper">Tren superior</label>
                 </li>
                 <li>
-                    <input type="radio" id="lower" value="lower" name="area">
+                    <input type="radio" id="lower" value="lower" formControlName="area">
                     <label for="lower">Tren inferior</label>
                 </li>
                 <li>
-                    <input type="radio" id="cardio" value="cardio" name="area">
+                    <input type="radio" id="cardio" value="cardio" formControlName="area">
                     <label for="cardio">Cardio</label>
                 </li>
             </ul>
             <br/>
-            <br/><br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/>
             <ul class="selection">
                 <li>
                     <input type="submit" id="genexe" value="">

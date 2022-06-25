@@ -8,6 +8,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RandomexeComponent } from './components/randomexe/randomexe.component';
 import { NutinfoComponent } from './components/nutinfo/nutinfo.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { NutinfoComponent } from './components/nutinfo/nutinfo.component';
     HeaderComponent,
     FooterComponent,
     RandomexeComponent,
-    NutinfoComponent
+    NutinfoComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

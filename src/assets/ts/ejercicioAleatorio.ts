@@ -1,5 +1,5 @@
 function GenerateExercise() {
-
+    alert("caca");
     const formData = new FormData(document.querySelector('form'));
     var selections:string[] =[];
     var cont = 0;
