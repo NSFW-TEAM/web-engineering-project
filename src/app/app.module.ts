@@ -11,6 +11,8 @@ import { NutinfoComponent } from './components/nutinfo/nutinfo.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { QuestionsComponent } from './components/questions/questions.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { LoginComponent } from './components/login/login.component';
     RandomexeComponent,
     NutinfoComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent,
+    QuestionsComponent
   ],
   imports: [
     BrowserModule,

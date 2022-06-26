@@ -1,10 +1,12 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';
 import { RandomexeComponent } from './components/randomexe/randomexe.component';
 import { NutinfoComponent } from './components/nutinfo/nutinfo.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { QuestionsComponent } from './components/questions/questions.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'/landing',pathMatch:'full'},
@@ -12,7 +14,9 @@ const routes: Routes = [
   {path:'randomexe',component:RandomexeComponent},
   {path:'nutinfo',component:NutinfoComponent},
   {path:'register',component:RegisterComponent},
-  {path:'login',component:LoginComponent}
+  {path:'login',component:LoginComponent},
+  {path:'profile',component:ProfileComponent},
+  {path:'questions',component:QuestionsComponent}
 ];
 
 @NgModule({

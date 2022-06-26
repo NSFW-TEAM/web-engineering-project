@@ -1,6 +1,13 @@
 @import "variables";
 
-html{
+article{
+    background: {
+        color: transparent;
+        image: url('../imagenes/rockbg.jpg');
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    }
     font-family: $bigfont;
 }
 
@@ -23,6 +30,7 @@ header{
 
 
 #galeria {
+    color: white;
     img{
         width: 80%;
         height: 100px;

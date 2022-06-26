@@ -63,7 +63,7 @@
 
 section {
   background-color: transparent;
-  background-image: url("../imagenes/mazado.jpg");
+  background-image: url("/assets/imagenes/mazado.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
