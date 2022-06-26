@@ -2,7 +2,7 @@
 @import "botones";
 $colorRojo: red;
 
-body{
+section{
     background: {
         image: url('../imagenes/rockbg.jpg');
         position: center;
@@ -33,4 +33,10 @@ form{
 
 span{
     color: white;
+}
+
+.boton_submit{
+    background-color: red;
+    border-radius: 30px;
+    font-size: 1em;
 }

@@ -12,34 +12,23 @@ section{
     font-family: $bigfont;
 }
 
-hr{
-    border-color: $colorRojo;
-    height: 10px;
-    background-color: $colorRojo;
-}
-
-#signin{
-    font-family: $bigfont;
-    color: $colorBlancoPastel;
-}
-
-.form-control{
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
 #titulos{
     font-family: $bigfont;
     color: $colorRojo;
     font-style: oblique;
 }
 
-
-footer{
-    background-color: $colorNegro;
-    color: $colorBlancoPastel;
-    font-family: $bigfont;
+label{
+    color:white;
 }
+
+input{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: $smallfont;
+}
+
+
 

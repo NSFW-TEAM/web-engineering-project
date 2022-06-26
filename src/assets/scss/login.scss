@@ -13,22 +13,12 @@ section{
     padding: 5% 10%;
 }
 
-hr{
-    border-color: $colorRojo;
-    height: 10px;
-    background-color: $colorRojo;
-}
-
-#login{
-    font-family: $bigfont;
-    color: $colorBlancoPastel;
-}
-
-.form-control{
+input{
     width: 50%;
     align-items: center;
     justify-content: center;
     margin: auto;
+    font-family: $smallfont;
 }
 
 #titulos{
@@ -38,9 +28,6 @@ hr{
 }
 
 
-footer{
-    background-color: $colorNegro;
-    color: $colorBlancoPastel;
-    font-family: $bigfont;
+label{
+    color:white;
 }
-
