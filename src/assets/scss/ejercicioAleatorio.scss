@@ -1,5 +1,7 @@
 @import 'variables';
 
+$accordion-color: #550000 ;
+
 section{
     background: {
         image: url('../imagenes/rockbg.jpg');
@@ -27,63 +29,6 @@ section{
     -webkit-text-stroke: black 1px;
 }
 
-.selection{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    li{
-        position: relative;
-        margin-right: 1%;
-        width: 17%;
-        height: 70px;
-    }
-    label,input{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-    input[type="radio"]{
-        opacity: 0.01;
-        z-index: 1;
-        left: 50%;
-        top: 50%;
-    }
-    #genexe{
-        opacity: 0.01;
-    }
-    input[type="radio"]:checked+label{
-        background-color: red;
-        color: white;
-        border-color: darkred;
-    }
-    label{
-        background-color: $bgcolorpage;
-        user-select: none;
-        padding: 7%;
-        margin-left: 2%;
-        border: {
-            width: 3px;
-            style: solid;
-            color: grey;
-            radius: 50px;
-        }
-        cursor: pointer;
-        text-align: center;
-        z-index: 2;
-        font: {
-            family: $smallfont;
-            size: 1.5em;
-        }
-        color: white;
-        &:hover{
-            background: grey;
-            color: black;
-            border-color: black;
-        }
-    }
-}
 
 .contenedor{
     width: 100%;
@@ -96,48 +41,12 @@ section{
             left: auto;
             right: auto;
         }
-        height: 500px;
+        width : 80vw;
+        height: 100%;
         border: 10px double grey;
     }
-    ul{
-        margin: {
-            top: 2%;
-            bottom: 2%;
-        }
-        list-style-type: none;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        width: 100%;
-        li{
-            background: {
-                image: url('../imagenes/redpattern.jpg');
-                color: transparent;
-            }
-            border: {
-                width: 5px;
-                style: groove;
-                color: $verydarkred;
-                radius: 60px;
-            }
-            width: 28%;
-            height: 200px;
-            resize: none;
-            margin: {
-                left: 2%;
-                right: 2%;
-            }
-            hr{
-                margin: 0;
-                height: 0;
-                border: {
-                    top-color: $verydarkred;
-                    top-style: ridge;
-                    width: 0;
-                    top-width: 5px;
-                }
-            }
-        }
+    div{
+        color: $colorBlanco;
     }
 }
 
@@ -164,9 +73,8 @@ section{
         size: 1.3em;
     }
     text-align: center;
-    color: white;
-    padding-top: 5%;
 }
+
 
 footer{
     font: {
