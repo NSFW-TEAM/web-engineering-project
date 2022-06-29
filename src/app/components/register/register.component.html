@@ -31,8 +31,89 @@
               <input type="password" id="password2" formControlName="password2"/>
             </div>
             <br>
+            <div class="d-inline btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+              <label for="sex">Sexo</label>
+              <br>
+              <input type="radio" class="btn-check" name="btnradiosex" id="btnradiosex1"  value="male" formControlName="sex" >
+              <label class="btn btn-outline-danger" for="btnradiosex1">masculino</label>
+
+              <input type="radio" class="btn-check" name="btnradiosex" id="btnradiosex2"  value="female" formControlName="sex" >
+              <label class="btn btn-outline-danger" for="btnradiosex2">femenino</label>
+            </div>
+            <br><br><br>
+            <div class="d-inline btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+              <label for="obj">Objetivo</label>
+              <br>
+              <input type="radio" class="btn-check" name="btnradioobj" id="btnradioobj1"  value="lose" formControlName="obj" >
+              <label class="btn btn-outline-danger" for="btnradioobj1">Perder peso</label>
+
+              <input type="radio" class="btn-check" name="btnradioobj" id="btnradioobj2"  value="gain" formControlName="obj" >
+              <label class="btn btn-outline-danger" for="btnradioobj2">Ganar masa</label>
+            
+              <input type="radio" class="btn-check" name="btnradioobj" id="btnradioobj3"  value="balance" formControlName="obj" >
+              <label class="btn btn-outline-danger" for="btnradioobj3">Mantención</label>
+
+              <input type="radio" class="btn-check" name="btnradioobj" id="btnradioobj4"  value="toning" formControlName="obj" >
+              <label class="btn btn-outline-danger" for="btnradioobj4">Tonificación</label>
+            </div>
+            <br><br><br>
+            <div class="d-inline btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+              <label for="area">enfoque del entrenamiento</label>
+              <br>
+              <input type="radio" class="btn-check" name="btnradioarea" id="btnradioarea1"  value="upper" formControlName="area" >
+              <label class="btn btn-outline-danger" for="btnradioarea1">tren superior</label>
+
+              <input type="radio" class="btn-check" name="btnradioarea" id="btnradioarea2"  value="lower" formControlName="area" >
+              <label class="btn btn-outline-danger" for="btnradioarea2">tren inferior</label>
+            
+              <input type="radio" class="btn-check" name="btnradioarea" id="btnradioarea3"  value="cardio" formControlName="area" >
+              <label class="btn btn-outline-danger" for="btnradioobj3">Mantención</label>
+            </div>
+            <br><br><br>
+            <div class="d-inline btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+              <label for="equip">uso de equipo</label>
+              <br>
+              <input type="radio" class="btn-check" name="btnradioequip" id="btnradioequip1"  value="con equipo" formControlName="equip" >
+              <label class="btn btn-outline-danger" for="btnradioequip1">con equipo</label>
+
+              <input type="radio" class="btn-check" name="btnradioequip" id="btnradioequip2"  value="sin equipo" formControlName="equip" >
+              <label class="btn btn-outline-danger" for="btnradioequip2">sin equipo</label>
+            </div>
+            <br><br><br>
+            <div class="d-inline btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+              <label for="diff">nivel de experticia</label>
+              <br>
+              <input type="radio" class="btn-check" name="btnradiodiff" id="btnradiodiff1"  value="easy" formControlName="diff" >
+              <label class="btn btn-outline-danger" for="btnradiodiff1">principiante</label>
+
+              <input type="radio" class="btn-check" name="btnradiodiff" id="btnradiodiff2"  value="medium" formControlName="diff" >
+              <label class="btn btn-outline-danger" for="btnradiodiff2">intermedio</label>
+
+              <input type="radio" class="btn-check" name="btnradiodiff" id="btnradiodiff3"  value="hard" formControlName="diff" >
+              <label class="btn btn-outline-danger" for="btnradiodiff3">avanzado</label>
+
+              <input type="radio" class="btn-check" name="btnradiodiff" id="btnradiodiff4"  value="veryhard" formControlName="diff" >
+              <label class="btn btn-outline-danger" for="btnradiodiff4">espartano</label>
+            </div>
+            <br><br><br>
+            <div class="form-outline mb-4">
+              <label for="peso">Peso (en kg)</label>
+              <br>
+              <input type="number" id="peso" formControlName="peso"/>
+            </div>
+            <br>
+            <div class="form-outline mb-4">
+              <label for="altura">Altura (en cm)</label>
+              <br>
+              <input type="number" id="altura" formControlName="altura"/>
+            </div>
+            <br>
+            <span>
+              <input type="checkbox" id="terms" formControlName="terms"/> 
+              <p>acepto los términos y condiciones</p>
+            </span>
             <!--<a class="nav-link" routerLink="../questions">-->
-              <input class="btn btn-danger me-lg-2" value="Registrarse" type="submit" id="register" [disabled]="formRegister.invalid"/>
+              <input class="btn btn-danger me-lg-2" value="Registrarse" type="submit" id="register" disabled [disabled]="!formRegister.valid"/>
             <!--</a>-->
           </form>
         </div>
