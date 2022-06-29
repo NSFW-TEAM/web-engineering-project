@@ -24,7 +24,7 @@ export class RegisterComponent implements OnInit {
       validator: ConfirmedValidator('password1','password2')
   })
   }
-  mostrar(): any{
+  procesar(): any{
     var usuario = this.formRegister.controls['username'].value;
     var correo = this.formRegister.controls['email'].value;
     var contra1 = this.formRegister.controls['password1'].value;

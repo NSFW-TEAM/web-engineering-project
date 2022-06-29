@@ -46,10 +46,9 @@ section{
         display: block;
         margin : 0 auto;
     }
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
+    input::-webkit-inner-spin-button, 
+    input::-webkit-outer-spin-button { 
+        appearance: none;
     }
     label{
         color: white;

@@ -68,14 +68,25 @@ export class NutinfoComponent implements OnInit {
 
   ScrollToDiet(): any{
     var imc:number = this.CalcImc();
+    var selected:String = "none";
     if(imc>=11 && imc<18.5){
         document.getElementById("sup")!.scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'});
+        selected = "sup";
     }
     if(imc>=18.5 && imc<25){
         document.getElementById("bal")!.scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'});
+        selected = "bal";
     }
     if(imc>=25){
         document.getElementById("def")!.scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'});
+        selected = "def";
     }
+    var boxes = document.querySelectorAll('.diets');
+    boxes.forEach(box => {
+      box.setAttribute("style","border-color: transparent;");
+      if(box.id==selected){
+        box.setAttribute("style","border: 5px solid white");
+      }
+    });
   }
 }

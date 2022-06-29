@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import {Router} from '@angular/router';
 import * as $ from "jquery";
 
 @Component({
@@ -10,7 +11,7 @@ import * as $ from "jquery";
 export class LoginComponent implements OnInit {
   title='formLogin';
   public formLogin!: FormGroup;
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private route:Router) { }
 
   ngOnInit(): void {
     this.formLogin = this.formBuilder.group({
@@ -19,9 +20,21 @@ export class LoginComponent implements OnInit {
   });
   }
 
-  mostrar(): any{
+  procesar(): any{
     var usuario = this.formLogin.controls['username'].value;
     var contra = this.formLogin.controls['password'].value;
     alert("Usuario: "+usuario+"\nContraseña: "+contra+"\nAquí se obtienen los datos, se procesan en la API del angel");
+    this.isAdmin(usuario,contra);
+  }
+
+  isAdmin(user:String,password:String): any{
+    if(user=="nsfwteam" && password=="123"){
+      alert("sos el admin");
+      this.route.navigate(['/adminpanel']);
+      
+    }else{
+      this.route.navigate(['/profile']);
+    }
+    return;
   }
 }
