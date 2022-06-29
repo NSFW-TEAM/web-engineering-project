@@ -112,9 +112,12 @@
               <input type="checkbox" id="terms" formControlName="terms"/> 
               <p>acepto los términos y condiciones</p>
             </span>
-            <!--<a class="nav-link" routerLink="../questions">-->
+            <div style="display: inline-block; text-align: center;" [hidden]="captcha">
+                <re-captcha (resolved)="resolved($event)" siteKey="6Lcth68gAAAAAOWZlz9GgDul6rFotaycAspyHA-s"></re-captcha>
+            </div>
+            <div [hidden]="!captcha">
               <input class="btn btn-danger me-lg-2" value="Registrarse" type="submit" id="register" disabled [disabled]="!formRegister.valid"/>
-            <!--</a>-->
+            </div>
           </form>
         </div>
       </div>

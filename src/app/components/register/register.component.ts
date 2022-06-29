@@ -12,8 +12,11 @@ import { ConfirmedValidator } from '../../confirmed.validator';
 export class RegisterComponent implements OnInit {
   
   public formRegister!: FormGroup;
+  captcha: string;
 
-  constructor(private formBuilder: FormBuilder, private route:Router) { }
+  constructor(private formBuilder: FormBuilder, private route:Router) { 
+    this.captcha = '';
+  }
 
   ngOnInit(): void {
     this.formRegister = this.formBuilder.group({
@@ -48,6 +51,11 @@ export class RegisterComponent implements OnInit {
     var alturaenmt = parseFloat(altura)/100;
     alert("Usuario: "+usuario+"\nEmail: "+correo+"\n1era contraseña: "+contra1+"\n2da contraseña: "+contra2+"\nsexo: "+sexo+"\nobjetivo: "+objetivo+"\narea preferida: "+area+"\nuso de equipo: "+equipo+"\ndificultad: "+dificultad+"\npeso: "+peso+" kg.\naltura: "+alturaenmt+" cm.\nAquí se obtienen los datos, se procesan en la API del angel");
     this.ngOnInit();
+  }
+
+  resolved(captchaResponse: string){
+    this.captcha = captchaResponse;
+    console.log('captcha resuleto con respuesta: '+this.captcha);
   }
 
 }

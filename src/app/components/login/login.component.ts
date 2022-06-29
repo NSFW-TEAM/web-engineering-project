@@ -11,7 +11,10 @@ import * as $ from "jquery";
 export class LoginComponent implements OnInit {
   title='formLogin';
   public formLogin!: FormGroup;
-  constructor(private formBuilder: FormBuilder, private route:Router) { }
+  captcha: string;
+  constructor(private formBuilder: FormBuilder, private route:Router) {
+    this.captcha = '';
+   }
 
   ngOnInit(): void {
     this.formLogin = this.formBuilder.group({
@@ -36,5 +39,10 @@ export class LoginComponent implements OnInit {
       this.route.navigate(['/profile']);
     }
     return;
+  }
+
+  resolved(captchaResponse: string){
+    this.captcha = captchaResponse;
+    console.log('captcha resuleto con respuesta: '+this.captcha);
   }
 }
